@@ -62,7 +62,7 @@
 #include "tlv.h"
 #include "spi_master.h"
 #include "spi_frontend.h"
-// #include "uart_115k.h"
+#include "uart_115k.h"
 
 const char *FW_Version = "0X01";
 
@@ -117,9 +117,8 @@ int main( void )
 	InitSPI_FrontEnd_GPIO();
 	InitSPI();
 
-//	InitUart();
-
 	InitClockTo16MHz();
+	InitUart();
 
 	LED_OUT |= LED1;  // Runup
 

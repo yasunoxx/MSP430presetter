@@ -1,0 +1,2423 @@
+
+main.elf:     file format elf32-msp430
+
+SYMBOL TABLE:
+0000ffe4 l    d  __interrupt_vector_3	00000000 __interrupt_vector_3
+0000ffea l    d  __interrupt_vector_6	00000000 __interrupt_vector_6
+0000ffee l    d  __interrupt_vector_8	00000000 __interrupt_vector_8
+0000fff0 l    d  __interrupt_vector_9	00000000 __interrupt_vector_9
+0000fff2 l    d  __interrupt_vector_10	00000000 __interrupt_vector_10
+0000fff4 l    d  __interrupt_vector_11	00000000 __interrupt_vector_11
+0000fffe l    d  __reset_vector	00000000 __reset_vector
+0000c000 l    d  .rodata	00000000 .rodata
+0000c000 l    d  .rodata2	00000000 .rodata2
+0000c000 l    d  .text	00000000 .text
+00000200 l    d  .data	00000000 .data
+00000208 l    d  .bss	00000000 .bss
+00000266 l    d  .noinit	00000000 .noinit
+00000266 l    d  .heap	00000000 .heap
+00000000 l    d  .MSP430.attributes	00000000 .MSP430.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 spi_master.c
+00000000 l    df *ABS*	00000000 io.c
+00000000 l    df *ABS*	00000000 main.c
+0000c02c l     F .text	0000001a ConfigureTimerPwm.part.0
+00000000 l    df *ABS*	00000000 /usr/local/msp430-gcc/bin/../lib/gcc/msp430-elf/9.2.0/../../../../msp430-elf/lib/430/crt0.o
+0000fffe l       __reset_vector	00000000 __msp430_resetvec_hook
+00000000 l    df *ABS*	00000000 crt_bss.o
+00000000 l    df *ABS*	00000000 crt_movedata.o
+00000000 l    df *ABS*	00000000 crt_main.o
+00000000 l    df *ABS*	00000000 tlv.c
+00000000 l    df *ABS*	00000000 spi_frontend.c
+00000000 l    df *ABS*	00000000 uart_115k.c
+00000000 l    df *ABS*	00000000 lib_a-memcpy.o
+00000000 l    df *ABS*	00000000 lib_a-memmove.o
+00000000 l    df *ABS*	00000000 lib_a-memset.o
+00000001 g       *ABS*	00000000 IE2
+00000061 g       *ABS*	00000000 UCA0CTL1
+0000c28a g     F .text	00000012 ADC10_ISR
+00000022 g       *ABS*	00000000 P1DIR
+00000064 g       *ABS*	00000000 UCA0MCTL
+0000022e g     O .bss	00000014 TransmitBuffer
+00000208 g     O .bss	00000001 ScreenScenario
+00000053 g       *ABS*	00000000 BCSCTL3
+0000c1f0 g     F .text	00000046 TimerA1_ISR
+000010f8 g       *ABS*	00000000 CALDCO_16MHZ
+0000c0a8 g     F .text	0000002e initializeDCO
+00000025 g       *ABS*	00000000 P1IE
+00000218 g     O .bss	00000001 Var_CALBC1_12MHz
+0000022d g     O .bss	00000001 TXByteCtr
+0000c90a g     F .text	0000004e memmove
+000001b4 g       *ABS*	00000000 ADC10MEM
+0000020d g     O .bss	00000001 ClockMode
+0000c8e0 g       .text	00000000 .hidden __mspabi_func_epilog_6
+00000162 g       *ABS*	00000000 TA0CCTL0
+00000024 g       *ABS*	00000000 P1IES
+00000002 g       *ABS*	00000000 IFG1
+0000c8ee g     F .text	0000001e memcpy
+0000c876 g     F .text	0000001e SPI_ReadReg
+00000217 g     O .bss	00000001 Var_CALDCO_8MHz
+0000002a g       *ABS*	00000000 P2DIR
+00000120 g       *ABS*	00000000 WDTCTL
+000010ff g       *ABS*	00000000 CALBC1_1MHZ
+00000216 g     O .bss	00000001 Var_CALBC1_8MHz
+0000c000 g     F .text	00000004 __crt0_start
+0000026a g       .heap	00000000 __HeapLimit
+0000026a g       .heap	00000000 __heap_end__
+0000c894 g     F .text	0000000e InitSPI_FrontEnd_GPIO
+0000c68e g     F .text	0000002e SPI_Master_ReadReg
+0000c004 g     F .text	0000000e __crt0_init_bss
+0000005e g       *ABS*	00000000 __bsssize
+00000224 g     O .bss	00000002 Var_CAL_ADC_15T30
+00000219 g     O .bss	00000001 Var_CALDCO_12MHz
+0000c8ea g       .text	00000000 .hidden __mspabi_func_epilog_1
+00000220 g     O .bss	00000002 Var_CAL_ADC_25VREF_FACTOR
+0000c8e6 g       .text	00000000 .hidden __mspabi_func_epilog_3
+00000226 g     O .bss	00000002 Var_CAL_ADC_15VREF_FACTOR
+0000006e g       *ABS*	00000000 UCB0RXBUF
+0000c638 g     F .text	00000056 SPI_Master_WriteReg
+00000228 g     O .bss	00000002 Var_CAL_ADC_OFFSET
+000001b2 g       *ABS*	00000000 ADC10CTL1
+0000025c g     O .bss	00000001 SlaveType0
+00000063 g       *ABS*	00000000 UCA0BR1
+0000021a g     O .bss	00000001 Var_CALBC1_16MHz
+00000203 g     O .data	00000003 MCP23S17_Init2
+00000214 g     O .bss	00000001 Var_CALBC1_1MHz
+0000c738 g     F .text	0000010e USCIB0RX_ISR
+0000006b g       *ABS*	00000000 UCB0BR1
+00000266 g       .noinit	00000000 end
+0000020a g     O .bss	00000002 ScreenWait
+0000c246 g     F .text	00000018 ConfigureAdcTempSensor
+00000026 g       *ABS*	00000000 P1SEL
+00000062 g       *ABS*	00000000 UCA0BR0
+00000041 g       *ABS*	00000000 P1SEL2
+0000c856 g     F .text	00000020 SPI_WriteReg
+0000021c g     O .bss	00000002 Var_CAL_ADC_25T85
+0000c000 g       .text	00000000 _start
+0000021b g     O .bss	00000001 Var_CALDCO_16MHz
+0000022a g     O .bss	00000002 Var_CAL_ADC_GAIN_FACTOR
+00000056 g       *ABS*	00000000 DCOCTL
+0000025d g     O .bss	00000002 SlaveType1
+00000258 g     O .bss	00000001 TransmitRegAddr
+00000172 g       *ABS*	00000000 TA0CCR0
+00000242 g     O .bss	00000001 ReceiveIndex
+0000020e g     O .bss	00000002 LcdWait
+00000008 g       *ABS*	00000000 __romdatacopysize
+0000c61a g     F .text	0000001e CopyArray
+00000003 g       *ABS*	00000000 IFG2
+00000029 g       *ABS*	00000000 P2OUT
+0000c29c g     F .text	00000380 GetTLV
+00000212 g     O .bss	00000002 TempReg
+00000000  w      *ABS*	00000000 __rom_highdatacopysize
+0000c950 g     F .text	00000014 memset
+00000069 g       *ABS*	00000000 UCB0CTL1
+0000c0d6 g     F .text	00000114 main
+00000266 g       .heap	00000000 __heap_start__
+00000210 g     O .bss	00000002 SysTimer_Counter
+0000c046 g     F .text	00000016 PreApplicationMode
+00000000  w      *ABS*	00000000 __high_bsssize
+000010f9 g       *ABS*	00000000 CALBC1_16MHZ
+00000160 g       *ABS*	00000000 TA0CTL
+00000000  w      *ABS*	00000000 __rom_highdatastart
+0000c26a g     F .text	00000012 InitializeLeds
+00000000 g       *ABS*	00000000 IE1
+0000c6cc g     F .text	0000001c InitClockTo16MHz
+0000c236 g     F .text	00000010 WDT_ISR
+00000215 g     O .bss	00000001 Var_CALDCO_1MHz
+0000c6e8 g     F .text	0000002c InitSPI_GPIO
+0000006f g       *ABS*	00000000 UCB0TXBUF
+0000022c g     O .bss	00000001 TransmitIndex
+0000c962 g       *ABS*	00000000 __romdatastart
+0000c05c g     F .text	00000028 ConfigureTimerPwm
+0000c27c g     F .text	0000000e InitializeButton
+00000244 g     O .bss	00000014 ReceiveBuffer
+0000c084 g     F .text	00000024 InitializeClocks
+0000c8a2 g     F .text	0000003e InitUart
+00000206 g     O .data	00000002 MCP23S17_Init1
+000001b0 g       *ABS*	00000000 ADC10CTL0
+00000021 g       *ABS*	00000000 P1OUT
+00000058 g       *ABS*	00000000 BCSCTL2
+00000000  w      *ABS*	00000000 __high_datastart
+00000000  w      *ABS*	00000000 __upper_data_init
+0000c714 g     F .text	00000024 InitSPI
+00000208 g       .bss	00000000 __bssstart
+0000c8e2 g       .text	00000000 .hidden __mspabi_func_epilog_5
+00000243 g     O .bss	00000001 RXByteCtr
+00000400 g       .MSP430.attributes	00000000 __stack
+00000208 g       .data	00000000 _edata
+00000266 g       .heap	00000000 _end
+00000164 g       *ABS*	00000000 TA0CCTL1
+0000020c g     O .bss	00000001 F_SysTimer_Flipper
+00000057 g       *ABS*	00000000 BCSCTL1
+00000000  w      *ABS*	00000000 __high_bssstart
+00000027 g       *ABS*	00000000 P1REN
+0000021e g     O .bss	00000002 Var_CAL_ADC_25T30
+0000025a g     O .bss	00000002 MasterMode
+0000c1ea g     F .text	00000006 TimerA0_ISR
+0000c846 g     F .text	00000010 Port_1
+0000c026 g     F .text	00000006 __crt0_call_main
+0000c25e g     F .text	0000000c SampleAndConversionAdcTemp
+0000025f g     O .bss	00000006 SlaveType2
+00000200 g     O .data	00000003 MCP23S17_Init3
+0000006a g       *ABS*	00000000 UCB0BR0
+00000068 g       *ABS*	00000000 UCB0CTL0
+00000222 g     O .bss	00000002 Var_CAL_ADC_15T85
+00000200 g       .data	00000000 __datastart
+0000c012 g     F .text	00000014 __crt0_movedata
+0000c8e8 g       .text	00000000 .hidden __mspabi_func_epilog_2
+0000c6bc g     F .text	00000010 SendUCB0Data
+00000023 g       *ABS*	00000000 P1IFG
+0000c8de g       .text	00000000 .hidden __mspabi_func_epilog_7
+0000c8e4 g       .text	00000000 .hidden __mspabi_func_epilog_4
+
+
+
+Disassembly of section __interrupt_vector_3:
+
+0000ffe4 <__interrupt_vector_3>:
+    ffe4:	46 c8       	interrupt service routine at 0xc846
+
+Disassembly of section __interrupt_vector_6:
+
+0000ffea <__interrupt_vector_6>:
+    ffea:	8a c2       	interrupt service routine at 0xc28a
+
+Disassembly of section __interrupt_vector_8:
+
+0000ffee <__interrupt_vector_8>:
+    ffee:	38 c7       	interrupt service routine at 0xc738
+
+Disassembly of section __interrupt_vector_9:
+
+0000fff0 <__interrupt_vector_9>:
+    fff0:	f0 c1       	interrupt service routine at 0xc1f0
+
+Disassembly of section __interrupt_vector_10:
+
+0000fff2 <__interrupt_vector_10>:
+    fff2:	ea c1       	interrupt service routine at 0xc1ea
+
+Disassembly of section __interrupt_vector_11:
+
+0000fff4 <__interrupt_vector_11>:
+    fff4:	36 c2       	interrupt service routine at 0xc236
+
+Disassembly of section .text:
+
+0000c000 <__crt0_start>:
+    c000:	31 40 00 04 	mov	#1024,	r1	;#0x0400
+
+0000c004 <__crt0_init_bss>:
+    c004:	3c 40 08 02 	mov	#520,	r12	;#0x0208
+
+0000c008 <.Loc.76.1>:
+    c008:	0d 43       	clr	r13		;
+
+0000c00a <.Loc.77.1>:
+    c00a:	3e 40 5e 00 	mov	#94,	r14	;#0x005e
+
+0000c00e <.Loc.81.1>:
+    c00e:	b0 12 50 c9 	call	#-14000	;#0xc950
+
+0000c012 <__crt0_movedata>:
+    c012:	3c 40 00 02 	mov	#512,	r12	;#0x0200
+
+0000c016 <.Loc.116.1>:
+    c016:	3d 40 62 c9 	mov	#-13982,r13	;#0xc962
+
+0000c01a <.Loc.119.1>:
+    c01a:	0d 9c       	cmp	r12,	r13	;
+
+0000c01c <.Loc.120.1>:
+    c01c:	04 24       	jz	$+10     	;abs 0xc026
+
+0000c01e <.Loc.122.1>:
+    c01e:	3e 40 08 00 	mov	#8,	r14	;
+
+0000c022 <.Loc.124.1>:
+    c022:	b0 12 0a c9 	call	#-14070	;#0xc90a
+
+0000c026 <__crt0_call_main>:
+    c026:	0c 43       	clr	r12		;
+
+0000c028 <.Loc.254.1>:
+    c028:	b0 12 d6 c0 	call	#-16170	;#0xc0d6
+
+0000c02c <ConfigureTimerPwm.part.0>:
+
+void ConfigureTimerPwm( void )
+{
+  if( ClockMode == Low )
+  {
+    TACCR0 = TIMER_PWM_PERIOD;			// Compare Maxim value
+    c02c:	b2 40 3c 00 	mov	#60,	&0x0172	;#0x003c
+    c030:	72 01 
+
+0000c032 <.Loc.158.1>:
+#ifdef TARGET_XT1
+    TACTL = TASSEL_2 | MC_1;				// TACLK = SMCLK, Up mode.
+#else
+    TACTL = TASSEL_2 | MC_1;				// TACLK = ACLK, Up mode.
+    c032:	b2 40 10 02 	mov	#528,	&0x0160	;#0x0210
+    c036:	60 01 
+
+0000c038 <.Loc.160.1>:
+#endif
+    TACCTL0 = CCIE;									// TACCTL0 output OUT bit(not used)
+    c038:	b2 40 10 00 	mov	#16,	&0x0162	;#0x0010
+    c03c:	62 01 
+
+0000c03e <.Loc.161.1>:
+    TACCTL1 = CCIE + OUTMOD_3;			// TACCTL1 Capture Compare, Set/reset
+    c03e:	b2 40 70 00 	mov	#112,	&0x0164	;#0x0070
+    c042:	64 01 
+
+0000c044 <.Loc.170.1>:
+    TACCR0 = TIMER_PWM_PERIOD_DCO;	// Compare Maxim value
+		TACTL = TASSEL_2 | MC_1;				// TACLK = SMCLK, Up mode.
+		TACCTL0 = CCIE;									// TACCTL0 output OUT bit(not used)
+		TACCTL1 = CCIE + OUTMOD_3;			// TACCTL1 Capture Compare, Set/reset
+	}
+}
+    c044:	30 41       	ret			
+
+0000c046 <PreApplicationMode>:
+  SysTimer_Counter = 0;
+    c046:	82 43 10 02 	mov	#0,	&0x0210	;r3 As==00
+
+0000c04a <.Loc.141.1>:
+  F_SysTimer_Flipper = SYSTIMER_FLIP_OFF;
+    c04a:	c2 43 0c 02 	mov.b	#0,	&0x020c	;r3 As==00
+
+0000c04e <.Loc.142.1>:
+  ClockMode = Low;
+    c04e:	c2 43 0d 02 	mov.b	#0,	&0x020d	;r3 As==00
+
+0000c052 <.Loc.144.1>:
+  ScreenWait = 0;
+    c052:	82 43 0a 02 	mov	#0,	&0x020a	;r3 As==00
+
+0000c056 <.Loc.145.1>:
+  ScreenScenario = 0;
+    c056:	c2 43 08 02 	mov.b	#0,	&0x0208	;r3 As==00
+
+0000c05a <.Loc.148.1>:
+}
+    c05a:	30 41       	ret			
+
+0000c05c <ConfigureTimerPwm>:
+  if( ClockMode == Low )
+    c05c:	5c 42 0d 02 	mov.b	&0x020d,r12	;0x020d
+
+0000c060 <.Loc.152.1>:
+    c060:	0c 93       	cmp	#0,	r12	;r3 As==00
+    c062:	03 20       	jnz	$+8      	;abs 0xc06a
+    c064:	b0 12 2c c0 	call	#-16340	;#0xc02c
+
+0000c068 <.LVL0>:
+}
+    c068:	30 41       	ret			
+
+0000c06a <.L5>:
+    TACCR0 = TIMER_PWM_PERIOD_DCO;	// Compare Maxim value
+    c06a:	b2 40 60 ea 	mov	#-5536,	&0x0172	;#0xea60
+    c06e:	72 01 
+
+0000c070 <.Loc.166.1>:
+		TACTL = TASSEL_2 | MC_1;				// TACLK = SMCLK, Up mode.
+    c070:	b2 40 10 02 	mov	#528,	&0x0160	;#0x0210
+    c074:	60 01 
+
+0000c076 <.Loc.167.1>:
+		TACCTL0 = CCIE;									// TACCTL0 output OUT bit(not used)
+    c076:	b2 40 10 00 	mov	#16,	&0x0162	;#0x0010
+    c07a:	62 01 
+
+0000c07c <.Loc.168.1>:
+		TACCTL1 = CCIE + OUTMOD_3;			// TACCTL1 Capture Compare, Set/reset
+    c07c:	b2 40 70 00 	mov	#112,	&0x0164	;#0x0070
+    c080:	64 01 
+
+0000c082 <.Loc.170.1>:
+}
+    c082:	30 41       	ret			
+
+0000c084 <InitializeClocks>:
+      if( ( IFG1 & OFIFG ) == 0 ) break;
+    }
+    BCSCTL2 |= SELM_3;
+  }
+#else
+  DCOCTL = 0;
+    c084:	c2 43 56 00 	mov.b	#0,	&0x0056	;r3 As==00
+
+0000c088 <.Loc.201.1>:
+  BCSCTL1 = 0;
+    c088:	c2 43 57 00 	mov.b	#0,	&0x0057	;r3 As==00
+
+0000c08c <.Loc.202.1>:
+  BCSCTL1 = XT2OFF | DIVA_0 | RSEL0;
+    c08c:	f2 40 81 ff 	mov.b	#-127,	&0x0057	;#0xff81
+    c090:	57 00 
+
+0000c092 <.Loc.204.1>:
+                          // Set ACLK / 1
+  BCSCTL2 = 0;
+    c092:	c2 43 58 00 	mov.b	#0,	&0x0058	;r3 As==00
+
+0000c096 <.Loc.205.1>:
+  BCSCTL2 = SELM_3 | DIVM_0 | SELS | DIVS_0;
+    c096:	f2 40 c8 ff 	mov.b	#-56,	&0x0058	;#0xffc8
+    c09a:	58 00 
+
+0000c09c <.Loc.207.1>:
+                          // SMCLK = MCLK = ACLK = 12kHz
+  BCSCTL3 = 0;
+    c09c:	c2 43 53 00 	mov.b	#0,	&0x0053	;r3 As==00
+
+0000c0a0 <.Loc.208.1>:
+  BCSCTL3 = LFXT1S_2; // use VLO
+    c0a0:	f2 40 20 00 	mov.b	#32,	&0x0053	;#0x0020
+    c0a4:	53 00 
+
+0000c0a6 <.Loc.210.1>:
+#endif
+}
+    c0a6:	30 41       	ret			
+
+0000c0a8 <initializeDCO>:
+
+void initializeDCO( void )
+{
+  DCOCTL = Var_CALDCO_12MHz;
+    c0a8:	d2 42 19 02 	mov.b	&0x0219,&0x0056	;0x0219
+    c0ac:	56 00 
+
+0000c0ae <.Loc.215.1>:
+  DCOCTL |= DCO2;
+    c0ae:	f2 d0 80 ff 	bis.b	#-128,	&0x0056	;#0xff80
+    c0b2:	56 00 
+
+0000c0b4 <.Loc.216.1>:
+  BCSCTL1 = Var_CALBC1_12MHz;
+    c0b4:	d2 42 18 02 	mov.b	&0x0218,&0x0057	;0x0218
+    c0b8:	57 00 
+
+0000c0ba <.Loc.217.1>:
+  BCSCTL1 |= DIVA_0;
+  BCSCTL2 &= ~( DIVS_3 );
+    c0ba:	f2 f0 f9 ff 	and.b	#-7,	&0x0058	;#0xfff9
+    c0be:	58 00 
+
+0000c0c0 <.Loc.219.1>:
+  BCSCTL2 = SELM_0 | DIVM_0; // DCO = MCLK = SMCLK = ACLK(12MHZ, VLO * 1000)
+    c0c0:	c2 43 58 00 	mov.b	#0,	&0x0058	;r3 As==00
+
+0000c0c4 <.Loc.220.1>:
+  TACTL = TASSEL_2 | MC_2 | TACLR;
+    c0c4:	b2 40 24 02 	mov	#548,	&0x0160	;#0x0224
+    c0c8:	60 01 
+
+0000c0ca <.Loc.222.1>:
+      // Select SMCKL as source, no divider, Continuous mode and reset timer
+  BCSCTL1 |= XT2OFF; // XT2 off, and Set ACLK to /1 divider
+    c0ca:	f2 d0 80 ff 	bis.b	#-128,	&0x0057	;#0xff80
+    c0ce:	57 00 
+
+0000c0d0 <.Loc.224.1>:
+
+  ClockMode = High;
+    c0d0:	d2 43 0d 02 	mov.b	#1,	&0x020d	;r3 As==01
+
+0000c0d4 <.Loc.225.1>:
+}
+    c0d4:	30 41       	ret			
+
+0000c0d6 <main>:
+{
+    c0d6:	0a 12       	push	r10		;
+
+0000c0d8 <.LCFI0>:
+	WDTCTL = WDTPW + WDTHOLD;  // Stop WDT
+    c0d8:	b2 40 80 5a 	mov	#23168,	&0x0120	;#0x5a80
+    c0dc:	20 01 
+
+0000c0de <.LBB10>:
+  DCOCTL = 0;
+    c0de:	c2 43 56 00 	mov.b	#0,	&0x0056	;r3 As==00
+
+0000c0e2 <.Loc.201.1>:
+  BCSCTL1 = 0;
+    c0e2:	c2 43 57 00 	mov.b	#0,	&0x0057	;r3 As==00
+
+0000c0e6 <.Loc.202.1>:
+  BCSCTL1 = XT2OFF | DIVA_0 | RSEL0;
+    c0e6:	f2 40 81 ff 	mov.b	#-127,	&0x0057	;#0xff81
+    c0ea:	57 00 
+
+0000c0ec <.Loc.204.1>:
+  BCSCTL2 = 0;
+    c0ec:	c2 43 58 00 	mov.b	#0,	&0x0058	;r3 As==00
+
+0000c0f0 <.Loc.205.1>:
+  BCSCTL2 = SELM_3 | DIVM_0 | SELS | DIVS_0;
+    c0f0:	f2 40 c8 ff 	mov.b	#-56,	&0x0058	;#0xffc8
+    c0f4:	58 00 
+
+0000c0f6 <.Loc.207.1>:
+  BCSCTL3 = 0;
+    c0f6:	c2 43 53 00 	mov.b	#0,	&0x0053	;r3 As==00
+
+0000c0fa <.Loc.208.1>:
+  BCSCTL3 = LFXT1S_2; // use VLO
+    c0fa:	f2 40 20 00 	mov.b	#32,	&0x0053	;#0x0020
+    c0fe:	53 00 
+
+0000c100 <.LBE10>:
+	InitializeButton();
+    c100:	b0 12 7c c2 	call	#-15748	;#0xc27c
+
+0000c104 <.LVL1>:
+	InitializeLeds();
+    c104:	b0 12 6a c2 	call	#-15766	;#0xc26a
+
+0000c108 <.LBB12>:
+  SysTimer_Counter = 0;
+    c108:	82 43 10 02 	mov	#0,	&0x0210	;r3 As==00
+
+0000c10c <.Loc.141.1>:
+  F_SysTimer_Flipper = SYSTIMER_FLIP_OFF;
+    c10c:	c2 43 0c 02 	mov.b	#0,	&0x020c	;r3 As==00
+
+0000c110 <.Loc.142.1>:
+  ClockMode = Low;
+    c110:	c2 43 0d 02 	mov.b	#0,	&0x020d	;r3 As==00
+
+0000c114 <.Loc.144.1>:
+  ScreenWait = 0;
+    c114:	82 43 0a 02 	mov	#0,	&0x020a	;r3 As==00
+
+0000c118 <.Loc.145.1>:
+  ScreenScenario = 0;
+    c118:	c2 43 08 02 	mov.b	#0,	&0x0208	;r3 As==00
+
+0000c11c <.LBB14>:
+  if( ClockMode == Low )
+    c11c:	5c 42 0d 02 	mov.b	&0x020d,r12	;0x020d
+
+0000c120 <.Loc.152.1>:
+    c120:	0c 93       	cmp	#0,	r12	;r3 As==00
+    c122:	54 20       	jnz	$+170    	;abs 0xc1cc
+    c124:	3a 40 2c c0 	mov	#-16340,r10	;#0xc02c
+    c128:	8a 12       	call	r10		;
+
+0000c12a <.L11>:
+	__enable_interrupt();
+    c12a:	32 d2       	eint			
+
+0000c12c <.Loc.109.1>:
+	ConfigureAdcTempSensor();
+    c12c:	b0 12 46 c2 	call	#-15802	;#0xc246
+
+0000c130 <.LVL4>:
+	GetTLV();
+    c130:	b0 12 9c c2 	call	#-15716	;#0xc29c
+
+0000c134 <.LVL5>:
+	__disable_interrupt();
+    c134:	32 c2       	dint			
+    c136:	03 43       	nop			
+
+0000c138 <.Loc.112.1>:
+	initializeDCO(); // on this file
+    c138:	b0 12 a8 c0 	call	#-16216	;#0xc0a8
+
+0000c13c <.LBB17>:
+  if( ClockMode == Low )
+    c13c:	5c 42 0d 02 	mov.b	&0x020d,r12	;0x020d
+
+0000c140 <.Loc.152.1>:
+    c140:	0c 93       	cmp	#0,	r12	;r3 As==00
+    c142:	37 20       	jnz	$+112    	;abs 0xc1b2
+    c144:	8a 12       	call	r10		;
+
+0000c146 <.L13>:
+	__enable_interrupt();
+    c146:	32 d2       	eint			
+
+0000c148 <.Loc.116.1>:
+  InitSPI_GPIO();
+    c148:	b0 12 e8 c6 	call	#-14616	;#0xc6e8
+
+0000c14c <.LVL8>:
+	InitSPI_FrontEnd_GPIO();
+    c14c:	b0 12 94 c8 	call	#-14188	;#0xc894
+
+0000c150 <.LVL9>:
+	InitSPI();
+    c150:	b0 12 14 c7 	call	#-14572	;#0xc714
+
+0000c154 <.LVL10>:
+	InitClockTo16MHz();
+    c154:	b0 12 cc c6 	call	#-14644	;#0xc6cc
+
+0000c158 <.LVL11>:
+	InitUart();
+    c158:	b0 12 a2 c8 	call	#-14174	;#0xc8a2
+
+0000c15c <.LVL12>:
+	LED_OUT |= LED1;  // Runup
+    c15c:	d2 d3 21 00 	bis.b	#1,	&0x0021	;r3 As==01
+
+0000c160 <.Loc.125.1>:
+	SPI_WriteReg( 1, DEVADDR_TARGET1_WRITE, MCP23S17_Init1, INIT1_LEN );
+    c160:	3a 40 56 c8 	mov	#-14250,r10	;#0xc856
+    c164:	6f 43       	mov.b	#2,	r15	;r3 As==10
+    c166:	3e 40 06 02 	mov	#518,	r14	;#0x0206
+    c16a:	7d 40 4a 00 	mov.b	#74,	r13	;#0x004a
+    c16e:	5c 43       	mov.b	#1,	r12	;r3 As==01
+    c170:	8a 12       	call	r10		;
+
+0000c172 <.LVL13>:
+	SPI_WriteReg( 1, DEVADDR_TARGET1_WRITE, MCP23S17_Init2, INIT2_LEN );
+    c172:	7f 40 03 00 	mov.b	#3,	r15	;
+    c176:	3e 40 03 02 	mov	#515,	r14	;#0x0203
+    c17a:	7d 40 4a 00 	mov.b	#74,	r13	;#0x004a
+    c17e:	5c 43       	mov.b	#1,	r12	;r3 As==01
+    c180:	8a 12       	call	r10		;
+
+0000c182 <.LVL14>:
+	SPI_WriteReg( 1, DEVADDR_TARGET1_WRITE, MCP23S17_Init3, INIT3_LEN );
+    c182:	7f 40 03 00 	mov.b	#3,	r15	;
+    c186:	3e 40 00 02 	mov	#512,	r14	;#0x0200
+    c18a:	7d 40 4a 00 	mov.b	#74,	r13	;#0x004a
+    c18e:	5c 43       	mov.b	#1,	r12	;r3 As==01
+    c190:	8a 12       	call	r10		;
+
+0000c192 <.LVL15>:
+	SPI_ReadReg( 1, DEVADDR_TARGET1_READ, TYPE_2_LENGTH );
+    c192:	7e 40 06 00 	mov.b	#6,	r14	;
+    c196:	7d 40 4b 00 	mov.b	#75,	r13	;#0x004b
+    c19a:	5c 43       	mov.b	#1,	r12	;r3 As==01
+    c19c:	b0 12 76 c8 	call	#-14218	;#0xc876
+
+0000c1a0 <.LVL16>:
+  CopyArray(ReceiveBuffer, SlaveType2, TYPE_2_LENGTH );
+    c1a0:	7e 40 06 00 	mov.b	#6,	r14	;
+    c1a4:	3d 40 5f 02 	mov	#607,	r13	;#0x025f
+    c1a8:	3c 40 44 02 	mov	#580,	r12	;#0x0244
+    c1ac:	b0 12 1a c6 	call	#-14822	;#0xc61a
+
+0000c1b0 <.L14>:
+	while( 1 )
+    c1b0:	ff 3f       	jmp	$+0      	;abs 0xc1b0
+
+0000c1b2 <.L12>:
+    TACCR0 = TIMER_PWM_PERIOD_DCO;	// Compare Maxim value
+    c1b2:	b2 40 60 ea 	mov	#-5536,	&0x0172	;#0xea60
+    c1b6:	72 01 
+
+0000c1b8 <.Loc.166.1>:
+		TACTL = TASSEL_2 | MC_1;				// TACLK = SMCLK, Up mode.
+    c1b8:	b2 40 10 02 	mov	#528,	&0x0160	;#0x0210
+    c1bc:	60 01 
+
+0000c1be <.Loc.167.1>:
+		TACCTL0 = CCIE;									// TACCTL0 output OUT bit(not used)
+    c1be:	b2 40 10 00 	mov	#16,	&0x0162	;#0x0010
+    c1c2:	62 01 
+
+0000c1c4 <.Loc.168.1>:
+		TACCTL1 = CCIE + OUTMOD_3;			// TACCTL1 Capture Compare, Set/reset
+    c1c4:	b2 40 70 00 	mov	#112,	&0x0164	;#0x0070
+    c1c8:	64 01 
+    c1ca:	bd 3f       	jmp	$-132    	;abs 0xc146
+
+0000c1cc <.L10>:
+    TACCR0 = TIMER_PWM_PERIOD_DCO;	// Compare Maxim value
+    c1cc:	b2 40 60 ea 	mov	#-5536,	&0x0172	;#0xea60
+    c1d0:	72 01 
+
+0000c1d2 <.Loc.166.1>:
+		TACTL = TASSEL_2 | MC_1;				// TACLK = SMCLK, Up mode.
+    c1d2:	b2 40 10 02 	mov	#528,	&0x0160	;#0x0210
+    c1d6:	60 01 
+
+0000c1d8 <.Loc.167.1>:
+		TACCTL0 = CCIE;									// TACCTL0 output OUT bit(not used)
+    c1d8:	b2 40 10 00 	mov	#16,	&0x0162	;#0x0010
+    c1dc:	62 01 
+
+0000c1de <.Loc.168.1>:
+		TACCTL1 = CCIE + OUTMOD_3;			// TACCTL1 Capture Compare, Set/reset
+    c1de:	b2 40 70 00 	mov	#112,	&0x0164	;#0x0070
+    c1e2:	64 01 
+    c1e4:	3a 40 2c c0 	mov	#-16340,r10	;#0xc02c
+    c1e8:	a0 3f       	jmp	$-190    	;abs 0xc12a
+
+0000c1ea <TimerA0_ISR>:
+void __attribute__ (( interrupt TIMER0_A0_VECTOR )) TimerA0_ISR( void )
+#else
+interrupt ( TIMER0_A0_VECTOR ) TimerA0_ISR( void )
+#endif
+{
+  TACCTL0 &= ~CCIFG;
+    c1ea:	92 c3 62 01 	bic	#1,	&0x0162	;r3 As==01
+
+0000c1ee <.Loc.236.1>:
+}
+    c1ee:	00 13       	reti			
+
+0000c1f0 <TimerA1_ISR>:
+#if __MSP430_HEADER_VERSION__ == 1210
+void __attribute__ (( interrupt TIMER0_A1_VECTOR )) TimerA1_ISR( void )
+#else
+interrupt ( TIMER0_A1_VECTOR ) TimerA1_ISR( void )
+#endif
+{
+    c1f0:	0d 12       	push	r13		;
+
+0000c1f2 <.LCFI1>:
+    c1f2:	0c 12       	push	r12		;
+
+0000c1f4 <.LCFI2>:
+  SysTimer_Counter++;
+    c1f4:	92 53 10 02 	inc	&0x0210		;
+
+0000c1f8 <.Loc.245.1>:
+  if( SysTimer_Counter >= SYSTIMER_COUNTUP )
+    c1f8:	1c 42 10 02 	mov	&0x0210,r12	;0x0210
+
+0000c1fc <.Loc.245.1>:
+    c1fc:	7d 40 63 00 	mov.b	#99,	r13	;#0x0063
+    c200:	0d 9c       	cmp	r12,	r13	;
+    c202:	09 2c       	jc	$+20     	;abs 0xc216
+
+0000c204 <.Loc.247.1>:
+  {
+    if( F_SysTimer_Flipper == SYSTIMER_FLIP_OFF )
+    c204:	c2 93 0c 02 	cmp.b	#0,	&0x020c	;r3 As==00
+    c208:	0f 20       	jnz	$+32     	;abs 0xc228
+
+0000c20a <.Loc.249.1>:
+    {
+      F_SysTimer_Flipper = SYSTIMER_FLIP_ON;
+    c20a:	d2 43 0c 02 	mov.b	#1,	&0x020c	;r3 As==01
+
+0000c20e <.Loc.250.1>:
+      LED_OUT |= LED1;
+    c20e:	d2 d3 21 00 	bis.b	#1,	&0x0021	;r3 As==01
+
+0000c212 <.Loc.257.1>:
+    else
+    {
+      F_SysTimer_Flipper = SYSTIMER_FLIP_OFF;
+      LED_OUT &= ~LED1;
+    }
+    SysTimer_Counter = 0;
+    c212:	82 43 10 02 	mov	#0,	&0x0210	;r3 As==00
+
+0000c216 <.L17>:
+  }
+
+  LcdWait++;
+    c216:	92 53 0e 02 	inc	&0x020e		;
+
+0000c21a <.Loc.261.1>:
+  ScreenWait++;
+    c21a:	92 53 0a 02 	inc	&0x020a		;
+
+0000c21e <.Loc.263.1>:
+
+  TACCTL1 &= ~CCIFG;
+    c21e:	92 c3 64 01 	bic	#1,	&0x0164	;r3 As==01
+
+0000c222 <.Loc.264.1>:
+}
+    c222:	3c 41       	pop	r12		;
+
+0000c224 <.LCFI3>:
+    c224:	3d 41       	pop	r13		;
+
+0000c226 <.LCFI4>:
+    c226:	00 13       	reti			
+
+0000c228 <.L18>:
+      F_SysTimer_Flipper = SYSTIMER_FLIP_OFF;
+    c228:	c2 43 0c 02 	mov.b	#0,	&0x020c	;r3 As==00
+
+0000c22c <.Loc.255.1>:
+      LED_OUT &= ~LED1;
+    c22c:	d2 c3 21 00 	bic.b	#1,	&0x0021	;r3 As==01
+
+0000c230 <.Loc.257.1>:
+    SysTimer_Counter = 0;
+    c230:	82 43 10 02 	mov	#0,	&0x0210	;r3 As==00
+    c234:	f0 3f       	jmp	$-30     	;abs 0xc216
+
+0000c236 <WDT_ISR>:
+void __attribute__ (( interrupt WDT_VECTOR )) WDT_ISR( void )
+#else
+interrupt ( WDT_VECTOR ) WDT_ISR( void )
+#endif
+{
+  IE1 &= ~WDTIE;  /* disable interrupt */
+    c236:	d2 c3 00 00 	bic.b	#1,	&0x0000	;r3 As==01
+
+0000c23a <.Loc.274.1>:
+  IFG1 &= ~WDTIFG;  /* clear interrupt flag */
+    c23a:	d2 c3 02 00 	bic.b	#1,	&0x0002	;r3 As==01
+
+0000c23e <.Loc.275.1>:
+  WDTCTL = WDTPW + WDTHOLD;  /* put WDT back in hold state */
+    c23e:	b2 40 80 5a 	mov	#23168,	&0x0120	;#0x5a80
+    c242:	20 01 
+
+0000c244 <.Loc.276.1>:
+}
+    c244:	00 13       	reti			
+
+0000c246 <ConfigureAdcTempSensor>:
+volatile unsigned short TempReg;
+
+void ConfigureAdcTempSensor( void )
+{
+  /* Configure ADC Temp Sensor Channel */
+  ADC10CTL1 = INCH_10 + ADC10DIV_3 + SHS_1;
+    c246:	b2 40 60 a4 	mov	#-23456,&0x01b2	;#0xa460
+    c24a:	b2 01 
+
+0000c24c <.Loc.60.1>:
+                        // Temp Sensor ADC10CLK/4, Timer_A.OUT1 Trigger
+  ADC10CTL0 = SREF_1 + ADC10SHT_3 + REFON + REF2_5V + ADC10ON;  // + ADC10IE;
+    c24c:	
+0000c24e <L0^A>:
+    c24e:	70 38       	jl	$+226    	;abs 0xc330
+    c250:	
+0000c252 <.Loc.61.1>:
+  ADC10CTL0 &= ~ADC10IFG;
+    c252:	a2 c2 b0 01 	bic	#4,	&0x01b0	;r2 As==10
+
+0000c256 <.Loc.62.1>:
+  ADC10CTL0 |= ENC + ADC10SC;  // Sampling and conversion start
+    c256:	b2 d0 03 00 	bis	#3,	&0x01b0	;
+    c25a:	b0 01 
+
+0000c25c <.Loc.63.1>:
+}
+    c25c:	30 41       	ret			
+
+0000c25e <SampleAndConversionAdcTemp>:
+
+unsigned short SampleAndConversionAdcTemp( void )
+{
+  unsigned short tempreg;
+
+  tempreg = ADC10MEM;
+    c25e:	1c 42 b4 01 	mov	&0x01b4,r12	;0x01b4
+
+0000c262 <.Loc.70.1>:
+  ADC10CTL0 |= ENC + ADC10SC;         // Sampling and conversion start
+    c262:	b2 d0 03 00 	bis	#3,	&0x01b0	;
+    c266:	b0 01 
+
+0000c268 <.Loc.71.1>:
+  return tempreg;
+}
+    c268:	30 41       	ret			
+
+0000c26a <InitializeLeds>:
+
+void InitializeLeds( void )
+{
+  LED_DIR |= LED1 + LED2;
+    c26a:	f2 d0 41 00 	bis.b	#65,	&0x0022	;#0x0041
+    c26e:	22 00 
+
+0000c270 <.Loc.78.1>:
+//  LED_OUT &= ~( LED1 + LED2 );
+  LED_OUT &= ~LED1;
+    c270:	d2 c3 21 00 	bic.b	#1,	&0x0021	;r3 As==01
+
+0000c274 <.Loc.79.1>:
+  LED_OUT &= ~LED2;
+    c274:	f2 f0 bf ff 	and.b	#-65,	&0x0021	;#0xffbf
+    c278:	21 00 
+
+0000c27a <.Loc.80.1>:
+}
+    c27a:	30 41       	ret			
+
+0000c27c <InitializeButton>:
+
+void InitializeButton( void )   // Configure Push Button
+{
+  BUTTON_DIR &= ~BUTTON;
+    c27c:	f2 c2 22 00 	bic.b	#8,	&0x0022	;r2 As==11
+
+0000c280 <.Loc.85.1>:
+  BUTTON_OUT |= BUTTON;
+    c280:	f2 d2 21 00 	bis.b	#8,	&0x0021	;r2 As==11
+
+0000c284 <.Loc.86.1>:
+  BUTTON_REN |= BUTTON;
+    c284:	f2 d2 27 00 	bis.b	#8,	&0x0027	;r2 As==11
+
+0000c288 <.Loc.87.1>:
+}
+    c288:	30 41       	ret			
+
+0000c28a <ADC10_ISR>:
+void __attribute__ (( interrupt ADC10_VECTOR )) ADC10_ISR( void )
+#else
+interrupt ( ADC10_VECTOR ) ADC10_ISR( void )
+#endif
+{
+  TempReg = ADC10MEM;
+    c28a:	92 42 b4 01 	mov	&0x01b4,&0x0212	;0x01b4
+    c28e:	12 02 
+
+0000c290 <.Loc.99.1>:
+  ADC10CTL0 &= ~ADC10IFG;
+    c290:	a2 c2 b0 01 	bic	#4,	&0x01b0	;r2 As==10
+
+0000c294 <.Loc.100.1>:
+  ADC10CTL0 |= ENC + ADC10SC;
+    c294:	b2 d0 03 00 	bis	#3,	&0x01b0	;
+    c298:	b0 01 
+
+0000c29a <.Loc.101.1>:
+}
+    c29a:	00 13       	reti			
+
+0000c29c <GetTLV>:
+unsigned char Var_CALDCO_8MHz, Var_CALBC1_8MHz;
+unsigned char Var_CALDCO_1MHz, Var_CALBC1_1MHz;
+
+
+void GetTLV( void )
+{
+    c29c:	0a 12       	push	r10		;
+
+0000c29e <.LCFI0>:
+    c29e:	09 12       	push	r9		;
+
+0000c2a0 <.LCFI1>:
+    c2a0:	08 12       	push	r8		;
+
+0000c2a2 <.LCFI2>:
+    c2a2:	07 12       	push	r7		;
+
+0000c2a4 <.LCFI3>:
+    c2a4:	06 12       	push	r6		;
+
+0000c2a6 <.LCFI4>:
+    c2a6:	05 12       	push	r5		;
+
+0000c2a8 <.LCFI5>:
+    c2a8:	04 12       	push	r4		;
+
+0000c2aa <.LCFI6>:
+    c2aa:	31 80 58 00 	sub	#88,	r1	;#0x0058
+
+0000c2ae <.LCFI7>:
+  unsigned char data[ TLV_SIZE ];
+  unsigned char count = 0;
+  unsigned short checksum;
+
+  memcpy( data, (void *)TLV_START, TLV_SIZE );  // Read TLV
+    c2ae:	7e 40 40 00 	mov.b	#64,	r14	;#0x0040
+    c2b2:	3d 40 c0 10 	mov	#4288,	r13	;#0x10c0
+    c2b6:	0c 41       	mov	r1,	r12	;
+    c2b8:	3c 50 18 00 	add	#24,	r12	;#0x0018
+    c2bc:	b0 12 ee c8 	call	#-14098	;#0xc8ee
+
+0000c2c0 <.LVL1>:
+
+  // FIXME: add here CHECKSUM VALIDATION
+  checksum = data[ count++ ];
+  checksum += data[ count ++ ] << 8;
+    c2c0:	5c 42 1b 02 	mov.b	&0x021b,r12	;0x021b
+    c2c4:	81 4c 08 00 	mov	r12,	8(r1)	;
+    c2c8:	5d 42 1a 02 	mov.b	&0x021a,r13	;0x021a
+    c2cc:	81 4d 0a 00 	mov	r13,	10(r1)	; 0x000a
+    c2d0:	5e 42 19 02 	mov.b	&0x0219,r14	;0x0219
+    c2d4:	81 4e 0c 00 	mov	r14,	12(r1)	; 0x000c
+    c2d8:	5f 42 18 02 	mov.b	&0x0218,r15	;0x0218
+    c2dc:	81 4f 0e 00 	mov	r15,	14(r1)	; 0x000e
+    c2e0:	5c 42 17 02 	mov.b	&0x0217,r12	;0x0217
+    c2e4:	81 4c 10 00 	mov	r12,	16(r1)	; 0x0010
+    c2e8:	5d 42 16 02 	mov.b	&0x0216,r13	;0x0216
+    c2ec:	81 4d 12 00 	mov	r13,	18(r1)	; 0x0012
+    c2f0:	5e 42 15 02 	mov.b	&0x0215,r14	;0x0215
+    c2f4:	81 4e 14 00 	mov	r14,	20(r1)	; 0x0014
+    c2f8:	5f 42 14 02 	mov.b	&0x0214,r15	;0x0214
+    c2fc:	81 4f 16 00 	mov	r15,	22(r1)	; 0x0016
+    c300:	91 42 2a 02 	mov	&0x022a,0(r1)	;0x022a
+    c304:	00 00 
+    c306:	91 42 28 02 	mov	&0x0228,2(r1)	;0x0228
+    c30a:	02 00 
+    c30c:	91 42 26 02 	mov	&0x0226,4(r1)	;0x0226
+    c310:	04 00 
+    c312:	16 42 24 02 	mov	&0x0224,r6	;0x0224
+    c316:	17 42 22 02 	mov	&0x0222,r7	;0x0222
+    c31a:	18 42 20 02 	mov	&0x0220,r8	;0x0220
+    c31e:	19 42 1e 02 	mov	&0x021e,r9	;0x021e
+    c322:	1a 42 1c 02 	mov	&0x021c,r10	;0x021c
+    c326:	5b 41 1a 00 	mov.b	26(r1),	r11	;0x0001a
+
+0000c32a <.Loc.38.1>:
+  memcpy( data, (void *)TLV_START, TLV_SIZE );  // Read TLV
+    c32a:	81 43 06 00 	mov	#0,	6(r1)	;r3 As==00
+    c32e:	14 41 06 00 	mov	6(r1),	r4	;
+
+0000c332 <.Loc.42.1>:
+  checksum += data[ count ++ ] << 8;
+    c332:	6c 43       	mov.b	#2,	r12	;r3 As==10
+    c334:	6e 42       	mov.b	#4,	r14	;r2 As==10
+
+0000c336 <.Loc.85.1>:
+      Var_CALDCO_12MHz = data[ count++ ];
+      Var_CALBC1_12MHz = data[ count++ ];
+      Var_CALDCO_8MHz = data[ count++ ];
+      Var_CALBC1_8MHz = data[ count++ ];
+      Var_CALDCO_1MHz = data[ count++ ];
+      Var_CALBC1_1MHz = data[ count++ ];
+    c336:	55 43       	mov.b	#1,	r5	;r3 As==01
+
+0000c338 <.L2>:
+    if( data[ count ] == TAG_EMPTY )
+    c338:	4f 4e       	mov.b	r14,	r15	;
+
+0000c33a <.Loc.46.1>:
+    c33a:	7b 90 fe ff 	cmp.b	#-2,	r11	;#0xfffe
+    c33e:	63 24       	jz	$+200    	;abs 0xc406
+
+0000c340 <.L3>:
+    else if( data[ count ] == TAG_ADC10_1 )
+    c340:	7b 90 10 00 	cmp.b	#16,	r11	;#0x0010
+    c344:	a7 24       	jz	$+336    	;abs 0xc494
+
+0000c346 <.Loc.74.1>:
+    else if( data[ count ] == TAG_DCO_30 )
+    c346:	5b 93       	cmp.b	#1,	r11	;r3 As==01
+    c348:	f7 23       	jnz	$-16     	;abs 0xc338
+
+0000c34a <.LVL4>:
+      Var_CALDCO_16MHz = data[ count++ ];
+    c34a:	7d 40 18 00 	mov.b	#24,	r13	;#0x0018
+    c34e:	0d 51       	add	r1,	r13	;
+    c350:	0f 5d       	add	r13,	r15	;
+    c352:	6f 4f       	mov.b	@r15,	r15	;
+    c354:	81 4f 08 00 	mov	r15,	8(r1)	;
+
+0000c358 <.LVL5>:
+    c358:	4d 4c       	mov.b	r12,	r13	;
+    c35a:	7d 50 03 00 	add.b	#3,	r13	;
+
+0000c35e <.Loc.79.1>:
+      Var_CALBC1_16MHz = data[ count++ ];
+    c35e:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c362 <.Loc.79.1>:
+    c362:	7e 40 18 00 	mov.b	#24,	r14	;#0x0018
+    c366:	0e 51       	add	r1,	r14	;
+    c368:	0d 5e       	add	r14,	r13	;
+    c36a:	6d 4d       	mov.b	@r13,	r13	;
+    c36c:	81 4d 0a 00 	mov	r13,	10(r1)	; 0x000a
+
+0000c370 <.LVL6>:
+    c370:	4d 4c       	mov.b	r12,	r13	;
+    c372:	6d 52       	add.b	#4,	r13	;r2 As==10
+
+0000c374 <.Loc.80.1>:
+      Var_CALDCO_12MHz = data[ count++ ];
+    c374:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c378 <.Loc.80.1>:
+    c378:	0d 5e       	add	r14,	r13	;
+    c37a:	6d 4d       	mov.b	@r13,	r13	;
+    c37c:	81 4d 0c 00 	mov	r13,	12(r1)	; 0x000c
+
+0000c380 <.LVL7>:
+    c380:	4d 4c       	mov.b	r12,	r13	;
+    c382:	7d 50 05 00 	add.b	#5,	r13	;
+
+0000c386 <.Loc.81.1>:
+      Var_CALBC1_12MHz = data[ count++ ];
+    c386:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c38a <.Loc.81.1>:
+    c38a:	0d 5e       	add	r14,	r13	;
+    c38c:	6d 4d       	mov.b	@r13,	r13	;
+    c38e:	81 4d 0e 00 	mov	r13,	14(r1)	; 0x000e
+
+0000c392 <.LVL8>:
+    c392:	4d 4c       	mov.b	r12,	r13	;
+    c394:	7d 50 06 00 	add.b	#6,	r13	;
+
+0000c398 <.Loc.82.1>:
+      Var_CALDCO_8MHz = data[ count++ ];
+    c398:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c39c <.Loc.82.1>:
+    c39c:	0d 5e       	add	r14,	r13	;
+    c39e:	6d 4d       	mov.b	@r13,	r13	;
+    c3a0:	81 4d 10 00 	mov	r13,	16(r1)	; 0x0010
+
+0000c3a4 <.LVL9>:
+    c3a4:	4d 4c       	mov.b	r12,	r13	;
+    c3a6:	7d 50 07 00 	add.b	#7,	r13	;
+
+0000c3aa <.Loc.83.1>:
+      Var_CALBC1_8MHz = data[ count++ ];
+    c3aa:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c3ae <.Loc.83.1>:
+    c3ae:	0d 5e       	add	r14,	r13	;
+    c3b0:	6d 4d       	mov.b	@r13,	r13	;
+    c3b2:	81 4d 12 00 	mov	r13,	18(r1)	; 0x0012
+
+0000c3b6 <.Loc.84.1>:
+      Var_CALDCO_1MHz = data[ count++ ];
+    c3b6:	4d 4c       	mov.b	r12,	r13	;
+    c3b8:	7d 50 09 00 	add.b	#9,	r13	;
+    c3bc:	4e 4d       	mov.b	r13,	r14	;
+
+0000c3be <.LVL10>:
+      Var_CALBC1_8MHz = data[ count++ ];
+    c3be:	7d 53       	add.b	#-1,	r13	;r3 As==11
+
+0000c3c0 <.LVL11>:
+      Var_CALDCO_1MHz = data[ count++ ];
+    c3c0:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c3c4 <.Loc.84.1>:
+    c3c4:	7f 40 18 00 	mov.b	#24,	r15	;#0x0018
+    c3c8:	0f 51       	add	r1,	r15	;
+    c3ca:	0d 5f       	add	r15,	r13	;
+
+0000c3cc <.LVL12>:
+    c3cc:	6d 4d       	mov.b	@r13,	r13	;
+    c3ce:	81 4d 14 00 	mov	r13,	20(r1)	; 0x0014
+
+0000c3d2 <.Loc.85.1>:
+      Var_CALBC1_1MHz = data[ count++ ];
+    c3d2:	7c 50 0a 00 	add.b	#10,	r12	;#0x000a
+    c3d6:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c3da <.LVL13>:
+    c3da:	0d 4f       	mov	r15,	r13	;
+    c3dc:	0d 5e       	add	r14,	r13	;
+    c3de:	6d 4d       	mov.b	@r13,	r13	;
+    c3e0:	81 4d 16 00 	mov	r13,	22(r1)	; 0x0016
+    c3e4:	81 45 06 00 	mov	r5,	6(r1)	;
+
+0000c3e8 <.L4>:
+    }
+    if( count >= TLV_SIZE ) break;
+    c3e8:	7d 40 3f 00 	mov.b	#63,	r13	;#0x003f
+    c3ec:	4d 9c       	cmp.b	r12,	r13	;
+    c3ee:	17 28       	jnc	$+48     	;abs 0xc41e
+
+0000c3f0 <.L19>:
+    c3f0:	7d 40 18 00 	mov.b	#24,	r13	;#0x0018
+    c3f4:	0d 51       	add	r1,	r13	;
+    c3f6:	0d 5c       	add	r12,	r13	;
+    c3f8:	6b 4d       	mov.b	@r13,	r11	;
+    c3fa:	4e 4c       	mov.b	r12,	r14	;
+    c3fc:	6e 53       	incd.b	r14		;
+
+0000c3fe <.LVL16>:
+    if( data[ count ] == TAG_EMPTY )
+    c3fe:	4f 4e       	mov.b	r14,	r15	;
+
+0000c400 <.Loc.46.1>:
+    c400:	7b 90 fe ff 	cmp.b	#-2,	r11	;#0xfffe
+    c404:	9d 23       	jnz	$-196    	;abs 0xc340
+
+0000c406 <.L17>:
+      count++;
+    c406:	5c 53       	inc.b	r12		;
+
+0000c408 <.LVL18>:
+      count += data[ count ];
+    c408:	4d 4c       	mov.b	r12,	r13	;
+    c40a:	7c 40 18 00 	mov.b	#24,	r12	;#0x0018
+    c40e:	0c 51       	add	r1,	r12	;
+    c410:	0d 5c       	add	r12,	r13	;
+
+0000c412 <.Loc.50.1>:
+      count++;
+    c412:	6e 5d       	add.b	@r13,	r14	;
+    c414:	4c 4e       	mov.b	r14,	r12	;
+
+0000c416 <.LVL19>:
+    if( count >= TLV_SIZE ) break;
+    c416:	7d 40 3f 00 	mov.b	#63,	r13	;#0x003f
+    c41a:	4d 9c       	cmp.b	r12,	r13	;
+    c41c:	e9 2f       	jc	$-44     	;abs 0xc3f0
+
+0000c41e <.L7>:
+    c41e:	04 93       	cmp	#0,	r4	;r3 As==00
+    c420:	12 24       	jz	$+38     	;abs 0xc446
+    c422:	a2 41 2a 02 	mov	@r1,	&0x022a	;
+    c426:	92 41 02 00 	mov	2(r1),	&0x0228	;
+    c42a:	28 02 
+    c42c:	92 41 04 00 	mov	4(r1),	&0x0226	;
+    c430:	26 02 
+    c432:	82 46 24 02 	mov	r6,	&0x0224	;
+    c436:	82 47 22 02 	mov	r7,	&0x0222	;
+    c43a:	82 48 20 02 	mov	r8,	&0x0220	;
+    c43e:	82 49 1e 02 	mov	r9,	&0x021e	;
+    c442:	82 4a 1c 02 	mov	r10,	&0x021c	;
+
+0000c446 <.L8>:
+    c446:	81 93 06 00 	cmp	#0,	6(r1)	;r3 As==00
+    c44a:	20 24       	jz	$+66     	;abs 0xc48c
+    c44c:	1e 41 08 00 	mov	8(r1),	r14	;
+    c450:	c2 4e 1b 02 	mov.b	r14,	&0x021b	;
+    c454:	1f 41 0a 00 	mov	10(r1),	r15	;0x0000a
+    c458:	c2 4f 1a 02 	mov.b	r15,	&0x021a	;
+    c45c:	1c 41 0c 00 	mov	12(r1),	r12	;0x0000c
+    c460:	c2 4c 19 02 	mov.b	r12,	&0x0219	;
+    c464:	1d 41 0e 00 	mov	14(r1),	r13	;0x0000e
+    c468:	c2 4d 18 02 	mov.b	r13,	&0x0218	;
+    c46c:	1e 41 10 00 	mov	16(r1),	r14	;0x00010
+    c470:	c2 4e 17 02 	mov.b	r14,	&0x0217	;
+    c474:	1f 41 12 00 	mov	18(r1),	r15	;0x00012
+    c478:	c2 4f 16 02 	mov.b	r15,	&0x0216	;
+    c47c:	1c 41 14 00 	mov	20(r1),	r12	;0x00014
+    c480:	c2 4c 15 02 	mov.b	r12,	&0x0215	;
+    c484:	1d 41 16 00 	mov	22(r1),	r13	;0x00016
+    c488:	c2 4d 14 02 	mov.b	r13,	&0x0214	;
+
+0000c48c <.L1>:
+  } // endwhile
+}
+    c48c:	31 50 58 00 	add	#88,	r1	;#0x0058
+
+0000c490 <.LCFI8>:
+    c490:	30 40 de c8 	br	#0xc8de		;
+
+0000c494 <.L18>:
+      Var_CAL_ADC_GAIN_FACTOR = data[ count++ ];
+    c494:	4d 4c       	mov.b	r12,	r13	;
+    c496:	7d 50 03 00 	add.b	#3,	r13	;
+
+0000c49a <.Loc.58.1>:
+      Var_CAL_ADC_GAIN_FACTOR += data[ count++ ] << 8;
+    c49a:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c49e <.Loc.58.1>:
+    c49e:	7e 40 18 00 	mov.b	#24,	r14	;#0x0018
+    c4a2:	0e 51       	add	r1,	r14	;
+    c4a4:	0d 5e       	add	r14,	r13	;
+
+0000c4a6 <.Loc.58.1>:
+    c4a6:	6d 4d       	mov.b	@r13,	r13	;
+    c4a8:	0d 5d       	rla	r13		;
+    c4aa:	0d 5d       	rla	r13		;
+    c4ac:	0d 5d       	rla	r13		;
+    c4ae:	0d 5d       	rla	r13		;
+    c4b0:	0d 5d       	rla	r13		;
+    c4b2:	0d 5d       	rla	r13		;
+    c4b4:	0d 5d       	rla	r13		;
+    c4b6:	0d 5d       	rla	r13		;
+
+0000c4b8 <.Loc.57.1>:
+      Var_CAL_ADC_GAIN_FACTOR = data[ count++ ];
+    c4b8:	0f 5e       	add	r14,	r15	;
+
+0000c4ba <.Loc.58.1>:
+      Var_CAL_ADC_GAIN_FACTOR += data[ count++ ] << 8;
+    c4ba:	6f 4f       	mov.b	@r15,	r15	;
+    c4bc:	0f 5d       	add	r13,	r15	;
+    c4be:	81 4f 00 00 	mov	r15,	0(r1)	;
+
+0000c4c2 <.LVL22>:
+      Var_CAL_ADC_OFFSET = data[ count++ ];
+    c4c2:	4d 4c       	mov.b	r12,	r13	;
+    c4c4:	7d 50 05 00 	add.b	#5,	r13	;
+
+0000c4c8 <.Loc.60.1>:
+      Var_CAL_ADC_OFFSET += data[ count++ ] << 8;
+    c4c8:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c4cc <.Loc.60.1>:
+    c4cc:	0d 5e       	add	r14,	r13	;
+
+0000c4ce <.Loc.60.1>:
+    c4ce:	6e 4d       	mov.b	@r13,	r14	;
+    c4d0:	0e 5e       	rla	r14		;
+    c4d2:	0e 5e       	rla	r14		;
+    c4d4:	0e 5e       	rla	r14		;
+    c4d6:	0e 5e       	rla	r14		;
+    c4d8:	0e 5e       	rla	r14		;
+    c4da:	0e 5e       	rla	r14		;
+    c4dc:	0e 5e       	rla	r14		;
+    c4de:	0e 5e       	rla	r14		;
+
+0000c4e0 <.Loc.58.1>:
+      Var_CAL_ADC_GAIN_FACTOR += data[ count++ ] << 8;
+    c4e0:	4d 4c       	mov.b	r12,	r13	;
+    c4e2:	6d 52       	add.b	#4,	r13	;r2 As==10
+
+0000c4e4 <.Loc.59.1>:
+      Var_CAL_ADC_OFFSET = data[ count++ ];
+    c4e4:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c4e8 <.Loc.59.1>:
+    c4e8:	7f 40 18 00 	mov.b	#24,	r15	;#0x0018
+    c4ec:	0f 51       	add	r1,	r15	;
+    c4ee:	0d 5f       	add	r15,	r13	;
+
+0000c4f0 <.Loc.60.1>:
+      Var_CAL_ADC_OFFSET += data[ count++ ] << 8;
+    c4f0:	6d 4d       	mov.b	@r13,	r13	;
+    c4f2:	0d 5e       	add	r14,	r13	;
+    c4f4:	81 4d 02 00 	mov	r13,	2(r1)	;
+
+0000c4f8 <.LVL23>:
+      Var_CAL_ADC_15VREF_FACTOR = data[ count++ ];
+    c4f8:	4d 4c       	mov.b	r12,	r13	;
+    c4fa:	7d 50 07 00 	add.b	#7,	r13	;
+
+0000c4fe <.Loc.62.1>:
+      Var_CAL_ADC_15VREF_FACTOR += data[ count++ ] << 8;
+    c4fe:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c502 <.Loc.62.1>:
+    c502:	0d 5f       	add	r15,	r13	;
+
+0000c504 <.Loc.62.1>:
+    c504:	6e 4d       	mov.b	@r13,	r14	;
+    c506:	0e 5e       	rla	r14		;
+    c508:	0e 5e       	rla	r14		;
+    c50a:	0e 5e       	rla	r14		;
+    c50c:	0e 5e       	rla	r14		;
+    c50e:	0e 5e       	rla	r14		;
+    c510:	0e 5e       	rla	r14		;
+    c512:	0e 5e       	rla	r14		;
+    c514:	0e 5e       	rla	r14		;
+
+0000c516 <.Loc.60.1>:
+      Var_CAL_ADC_OFFSET += data[ count++ ] << 8;
+    c516:	4d 4c       	mov.b	r12,	r13	;
+    c518:	7d 50 06 00 	add.b	#6,	r13	;
+
+0000c51c <.Loc.61.1>:
+      Var_CAL_ADC_15VREF_FACTOR = data[ count++ ];
+    c51c:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c520 <.Loc.61.1>:
+    c520:	0d 5f       	add	r15,	r13	;
+
+0000c522 <.Loc.62.1>:
+      Var_CAL_ADC_15VREF_FACTOR += data[ count++ ] << 8;
+    c522:	6d 4d       	mov.b	@r13,	r13	;
+    c524:	0d 5e       	add	r14,	r13	;
+    c526:	81 4d 04 00 	mov	r13,	4(r1)	;
+
+0000c52a <.LVL24>:
+      Var_CAL_ADC_15T30 = data[ count++ ];
+    c52a:	4d 4c       	mov.b	r12,	r13	;
+    c52c:	7d 50 09 00 	add.b	#9,	r13	;
+
+0000c530 <.Loc.64.1>:
+      Var_CAL_ADC_15T30 += data[ count++ ] << 8;
+    c530:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c534 <.Loc.64.1>:
+    c534:	0d 5f       	add	r15,	r13	;
+
+0000c536 <.Loc.64.1>:
+    c536:	66 4d       	mov.b	@r13,	r6	;
+    c538:	06 56       	rla	r6		;
+    c53a:	06 56       	rla	r6		;
+    c53c:	06 56       	rla	r6		;
+    c53e:	06 56       	rla	r6		;
+    c540:	06 56       	rla	r6		;
+    c542:	06 56       	rla	r6		;
+    c544:	06 56       	rla	r6		;
+    c546:	06 56       	rla	r6		;
+
+0000c548 <.Loc.62.1>:
+      Var_CAL_ADC_15VREF_FACTOR += data[ count++ ] << 8;
+    c548:	4d 4c       	mov.b	r12,	r13	;
+    c54a:	7d 52       	add.b	#8,	r13	;r2 As==11
+
+0000c54c <.Loc.63.1>:
+      Var_CAL_ADC_15T30 = data[ count++ ];
+    c54c:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c550 <.Loc.63.1>:
+    c550:	0d 5f       	add	r15,	r13	;
+
+0000c552 <.Loc.64.1>:
+      Var_CAL_ADC_15T30 += data[ count++ ] << 8;
+    c552:	6d 4d       	mov.b	@r13,	r13	;
+    c554:	06 5d       	add	r13,	r6	;
+
+0000c556 <.LVL25>:
+      Var_CAL_ADC_15T85 = data[ count++ ];
+    c556:	4d 4c       	mov.b	r12,	r13	;
+    c558:	7d 50 0b 00 	add.b	#11,	r13	;#0x000b
+
+0000c55c <.Loc.66.1>:
+      Var_CAL_ADC_15T85 += data[ count++ ] << 8;
+    c55c:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c560 <.Loc.66.1>:
+    c560:	0d 5f       	add	r15,	r13	;
+
+0000c562 <.Loc.66.1>:
+    c562:	67 4d       	mov.b	@r13,	r7	;
+    c564:	07 57       	rla	r7		;
+    c566:	07 57       	rla	r7		;
+    c568:	07 57       	rla	r7		;
+    c56a:	07 57       	rla	r7		;
+    c56c:	07 57       	rla	r7		;
+    c56e:	07 57       	rla	r7		;
+    c570:	07 57       	rla	r7		;
+    c572:	07 57       	rla	r7		;
+
+0000c574 <.Loc.64.1>:
+      Var_CAL_ADC_15T30 += data[ count++ ] << 8;
+    c574:	4d 4c       	mov.b	r12,	r13	;
+    c576:	7d 50 0a 00 	add.b	#10,	r13	;#0x000a
+
+0000c57a <.Loc.65.1>:
+      Var_CAL_ADC_15T85 = data[ count++ ];
+    c57a:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c57e <.Loc.65.1>:
+    c57e:	0d 5f       	add	r15,	r13	;
+
+0000c580 <.Loc.66.1>:
+      Var_CAL_ADC_15T85 += data[ count++ ] << 8;
+    c580:	6d 4d       	mov.b	@r13,	r13	;
+    c582:	07 5d       	add	r13,	r7	;
+
+0000c584 <.LVL26>:
+      Var_CAL_ADC_25VREF_FACTOR = data[ count++ ];
+    c584:	4d 4c       	mov.b	r12,	r13	;
+    c586:	7d 50 0d 00 	add.b	#13,	r13	;#0x000d
+
+0000c58a <.Loc.68.1>:
+      Var_CAL_ADC_25VREF_FACTOR += data[ count++ ] << 8;
+    c58a:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c58e <.Loc.68.1>:
+    c58e:	0d 5f       	add	r15,	r13	;
+
+0000c590 <.Loc.68.1>:
+    c590:	68 4d       	mov.b	@r13,	r8	;
+    c592:	08 58       	rla	r8		;
+    c594:	08 58       	rla	r8		;
+    c596:	08 58       	rla	r8		;
+    c598:	08 58       	rla	r8		;
+    c59a:	08 58       	rla	r8		;
+    c59c:	08 58       	rla	r8		;
+    c59e:	08 58       	rla	r8		;
+    c5a0:	08 58       	rla	r8		;
+
+0000c5a2 <.Loc.66.1>:
+      Var_CAL_ADC_15T85 += data[ count++ ] << 8;
+    c5a2:	4d 4c       	mov.b	r12,	r13	;
+    c5a4:	7d 50 0c 00 	add.b	#12,	r13	;#0x000c
+
+0000c5a8 <.Loc.67.1>:
+      Var_CAL_ADC_25VREF_FACTOR = data[ count++ ];
+    c5a8:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c5ac <.Loc.67.1>:
+    c5ac:	0d 5f       	add	r15,	r13	;
+
+0000c5ae <.Loc.68.1>:
+      Var_CAL_ADC_25VREF_FACTOR += data[ count++ ] << 8;
+    c5ae:	6d 4d       	mov.b	@r13,	r13	;
+    c5b0:	08 5d       	add	r13,	r8	;
+
+0000c5b2 <.LVL27>:
+      Var_CAL_ADC_25T30 = data[ count++ ];
+    c5b2:	4d 4c       	mov.b	r12,	r13	;
+    c5b4:	7d 50 0f 00 	add.b	#15,	r13	;#0x000f
+
+0000c5b8 <.Loc.70.1>:
+      Var_CAL_ADC_25T30 += data[ count++ ] << 8;
+    c5b8:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c5bc <.Loc.70.1>:
+    c5bc:	0d 5f       	add	r15,	r13	;
+
+0000c5be <.Loc.70.1>:
+    c5be:	69 4d       	mov.b	@r13,	r9	;
+    c5c0:	09 59       	rla	r9		;
+    c5c2:	09 59       	rla	r9		;
+    c5c4:	09 59       	rla	r9		;
+    c5c6:	09 59       	rla	r9		;
+    c5c8:	09 59       	rla	r9		;
+    c5ca:	09 59       	rla	r9		;
+    c5cc:	09 59       	rla	r9		;
+    c5ce:	09 59       	rla	r9		;
+
+0000c5d0 <.Loc.68.1>:
+      Var_CAL_ADC_25VREF_FACTOR += data[ count++ ] << 8;
+    c5d0:	4d 4c       	mov.b	r12,	r13	;
+    c5d2:	7d 50 0e 00 	add.b	#14,	r13	;#0x000e
+
+0000c5d6 <.Loc.69.1>:
+      Var_CAL_ADC_25T30 = data[ count++ ];
+    c5d6:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c5da <.Loc.69.1>:
+    c5da:	0d 5f       	add	r15,	r13	;
+
+0000c5dc <.Loc.70.1>:
+      Var_CAL_ADC_25T30 += data[ count++ ] << 8;
+    c5dc:	6d 4d       	mov.b	@r13,	r13	;
+    c5de:	09 5d       	add	r13,	r9	;
+
+0000c5e0 <.Loc.71.1>:
+      Var_CAL_ADC_25T85 = data[ count++ ];
+    c5e0:	4e 4c       	mov.b	r12,	r14	;
+    c5e2:	7e 50 11 00 	add.b	#17,	r14	;#0x0011
+    c5e6:	3e f0 ff 00 	and	#255,	r14	;#0x00ff
+
+0000c5ea <.LVL28>:
+      Var_CAL_ADC_25T30 += data[ count++ ] << 8;
+    c5ea:	4d 4c       	mov.b	r12,	r13	;
+    c5ec:	7d 50 10 00 	add.b	#16,	r13	;#0x0010
+
+0000c5f0 <.Loc.71.1>:
+      Var_CAL_ADC_25T85 = data[ count++ ];
+    c5f0:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c5f4 <.Loc.71.1>:
+    c5f4:	0d 5f       	add	r15,	r13	;
+
+0000c5f6 <.Loc.72.1>:
+      Var_CAL_ADC_25T85 += data[ count++ ] << 8;
+    c5f6:	7c 50 12 00 	add.b	#18,	r12	;#0x0012
+    c5fa:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c5fe <.LVL29>:
+    c5fe:	0e 5f       	add	r15,	r14	;
+
+0000c600 <.Loc.72.1>:
+    c600:	6a 4e       	mov.b	@r14,	r10	;
+    c602:	0a 5a       	rla	r10		;
+    c604:	0a 5a       	rla	r10		;
+    c606:	0a 5a       	rla	r10		;
+    c608:	0a 5a       	rla	r10		;
+    c60a:	0a 5a       	rla	r10		;
+    c60c:	0a 5a       	rla	r10		;
+    c60e:	0a 5a       	rla	r10		;
+    c610:	0a 5a       	rla	r10		;
+
+0000c612 <.Loc.72.1>:
+    c612:	6d 4d       	mov.b	@r13,	r13	;
+    c614:	0a 5d       	add	r13,	r10	;
+    c616:	04 45       	mov	r5,	r4	;
+    c618:	e7 3e       	jmp	$-560    	;abs 0xc3e8
+
+0000c61a <CopyArray>:
+SPI_Mode SPI_Master_ReadReg(uint8_t reg_addr, uint8_t count);
+void CopyArray(uint8_t *source, uint8_t *dest, uint8_t count);
+void SendUCB0Data(uint8_t val);
+
+void CopyArray(uint8_t *source, uint8_t *dest, uint8_t count)
+{
+    c61a:	4f 4e       	mov.b	r14,	r15	;
+
+0000c61c <L0^A>:
+    uint8_t copyIndex = 0;
+    for (copyIndex = 0; copyIndex < count; copyIndex++)
+    c61c:	4e 93       	cmp.b	#0,	r14	;r3 As==00
+    c61e:	0b 24       	jz	$+24     	;abs 0xc636
+    c620:	0e 4c       	mov	r12,	r14	;
+
+0000c622 <.LVL2>:
+    c622:	1e 53       	inc	r14		;
+    c624:	7f 53       	add.b	#-1,	r15	;r3 As==11
+
+0000c626 <.LVL3>:
+    c626:	3f f0 ff 00 	and	#255,	r15	;#0x00ff
+    c62a:	0e 5f       	add	r15,	r14	;
+
+0000c62c <.L3>:
+    {
+        dest[copyIndex] = source[copyIndex];
+    c62c:	fd 4c 00 00 	mov.b	@r12+,	0(r13)	;
+
+0000c630 <.LVL5>:
+    c630:	1d 53       	inc	r13		;
+
+0000c632 <.LVL6>:
+    for (copyIndex = 0; copyIndex < count; copyIndex++)
+    c632:	0c 9e       	cmp	r14,	r12	;
+    c634:	fb 23       	jnz	$-8      	;abs 0xc62c
+
+0000c636 <.L1>:
+    }
+}
+    c636:	30 41       	ret			
+
+0000c638 <SPI_Master_WriteReg>:
+
+
+SPI_Mode SPI_Master_WriteReg(uint8_t reg_addr, uint8_t *reg_data, uint8_t count)
+{
+    c638:	0a 12       	push	r10		;
+
+0000c63a <.LCFI0>:
+    c63a:	09 12       	push	r9		;
+
+0000c63c <.LCFI1>:
+    c63c:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+    c640:	49 4e       	mov.b	r14,	r9	;
+
+0000c642 <.Loc.122.1>:
+    MasterMode = TX_REG_ADDRESS_MODE;
+    c642:	92 43 5a 02 	mov	#1,	&0x025a	;r3 As==01
+
+0000c646 <.Loc.123.1>:
+    TransmitRegAddr = reg_addr;
+    c646:	c2 4c 58 02 	mov.b	r12,	&0x0258	;
+
+0000c64a <.LBB17>:
+    for (copyIndex = 0; copyIndex < count; copyIndex++)
+    c64a:	4e 93       	cmp.b	#0,	r14	;r3 As==00
+    c64c:	0f 24       	jz	$+32     	;abs 0xc66c
+    c64e:	3e 40 2e 02 	mov	#558,	r14	;#0x022e
+
+0000c652 <.LVL10>:
+    c652:	4a 49       	mov.b	r9,	r10	;
+    c654:	7a 53       	add.b	#-1,	r10	;r3 As==11
+    c656:	3a f0 ff 00 	and	#255,	r10	;#0x00ff
+    c65a:	0a 5d       	add	r13,	r10	;
+
+0000c65c <.L11>:
+        dest[copyIndex] = source[copyIndex];
+    c65c:	6b 4d       	mov.b	@r13,	r11	;
+    c65e:	0f 4d       	mov	r13,	r15	;
+    c660:	1d 53       	inc	r13		;
+
+0000c662 <.LVL12>:
+    c662:	ce 4b 00 00 	mov.b	r11,	0(r14)	;
+    c666:	1e 53       	inc	r14		;
+
+0000c668 <.LVL13>:
+    for (copyIndex = 0; copyIndex < count; copyIndex++)
+    c668:	0f 9a       	cmp	r10,	r15	;
+    c66a:	f8 23       	jnz	$-14     	;abs 0xc65c
+
+0000c66c <.L10>:
+
+    //Copy register data to TransmitBuffer
+    CopyArray(reg_data, TransmitBuffer, count);
+
+    TXByteCtr = count;
+    c66c:	c2 49 2d 02 	mov.b	r9,	&0x022d	;
+
+0000c670 <.Loc.129.1>:
+    RXByteCtr = 0;
+    c670:	c2 43 43 02 	mov.b	#0,	&0x0243	;r3 As==00
+
+0000c674 <.Loc.130.1>:
+    ReceiveIndex = 0;
+    c674:	c2 43 42 02 	mov.b	#0,	&0x0242	;r3 As==00
+
+0000c678 <.Loc.131.1>:
+    TransmitIndex = 0;
+    c678:	c2 43 2c 02 	mov.b	#0,	&0x022c	;r3 As==00
+
+0000c67c <.L12>:
+    return MasterMode;
+}
+
+void SendUCB0Data(uint8_t val)
+{
+    while (!(IFG2 & UCB0TXIFG));              // USCI_A0 TX buffer ready?
+    c67c:	f2 b2 03 00 	bit.b	#8,	&0x0003	;r2 As==11
+    c680:	fd 27       	jz	$-4      	;abs 0xc67c
+
+0000c682 <.Loc.163.1>:
+    UCB0TXBUF = val;
+    c682:	c2 4c 6f 00 	mov.b	r12,	&0x006f	;
+
+0000c686 <.LBE19>:
+    __bis_SR_register(CPUOFF + GIE);              // Enter LPM0 w/ interrupts
+    c686:	32 d0 18 00 	bis	#24,	r2	;#0x0018
+
+0000c68a <.Loc.139.1>:
+}
+    c68a:	5c 43       	mov.b	#1,	r12	;r3 As==01
+
+0000c68c <.LVL17>:
+    c68c:	2d 3d       	jmp	$+604    	;abs 0xc8e8
+
+0000c68e <SPI_Master_ReadReg>:
+{
+    c68e:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c692 <.Loc.144.1>:
+    MasterMode = TX_REG_ADDRESS_MODE;
+    c692:	92 43 5a 02 	mov	#1,	&0x025a	;r3 As==01
+
+0000c696 <.Loc.145.1>:
+    TransmitRegAddr = reg_addr;
+    c696:	c2 4c 58 02 	mov.b	r12,	&0x0258	;
+
+0000c69a <.Loc.146.1>:
+    RXByteCtr = count;
+    c69a:	c2 4d 43 02 	mov.b	r13,	&0x0243	;
+
+0000c69e <.Loc.147.1>:
+    TXByteCtr = 0;
+    c69e:	c2 43 2d 02 	mov.b	#0,	&0x022d	;r3 As==00
+
+0000c6a2 <.Loc.148.1>:
+    ReceiveIndex = 0;
+    c6a2:	c2 43 42 02 	mov.b	#0,	&0x0242	;r3 As==00
+
+0000c6a6 <.Loc.149.1>:
+    TransmitIndex = 0;
+    c6a6:	c2 43 2c 02 	mov.b	#0,	&0x022c	;r3 As==00
+
+0000c6aa <.L20>:
+    while (!(IFG2 & UCB0TXIFG));              // USCI_A0 TX buffer ready?
+    c6aa:	f2 b2 03 00 	bit.b	#8,	&0x0003	;r2 As==11
+    c6ae:	fd 27       	jz	$-4      	;abs 0xc6aa
+
+0000c6b0 <.Loc.163.1>:
+    UCB0TXBUF = val;
+    c6b0:	c2 4c 6f 00 	mov.b	r12,	&0x006f	;
+
+0000c6b4 <.LBE21>:
+    __bis_SR_register(CPUOFF + GIE);              // Enter LPM0 w/ interrupts
+    c6b4:	32 d0 18 00 	bis	#24,	r2	;#0x0018
+
+0000c6b8 <.Loc.157.1>:
+}
+    c6b8:	5c 43       	mov.b	#1,	r12	;r3 As==01
+
+0000c6ba <.LVL21>:
+    c6ba:	30 41       	ret			
+
+0000c6bc <SendUCB0Data>:
+{
+    c6bc:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c6c0 <.L24>:
+    while (!(IFG2 & UCB0TXIFG));              // USCI_A0 TX buffer ready?
+    c6c0:	f2 b2 03 00 	bit.b	#8,	&0x0003	;r2 As==11
+    c6c4:	fd 27       	jz	$-4      	;abs 0xc6c0
+
+0000c6c6 <.Loc.163.1>:
+    UCB0TXBUF = val;
+    c6c6:	c2 4c 6f 00 	mov.b	r12,	&0x006f	;
+
+0000c6ca <.Loc.164.1>:
+}
+    c6ca:	30 41       	ret			
+
+0000c6cc <InitClockTo16MHz>:
+// Device Initialization *******************************************************
+//******************************************************************************
+
+void InitClockTo16MHz()
+{
+    if (CALBC1_16MHZ==0xFF)                  // If calibration constant erased
+    c6cc:	5c 42 f9 10 	mov.b	&0x10f9,r12	;0x10f9
+    c6d0:	7c 93       	cmp.b	#-1,	r12	;r3 As==11
+    c6d2:	09 24       	jz	$+20     	;abs 0xc6e6
+
+0000c6d4 <.Loc.176.1>:
+    {
+        while(1);                               // do not load, trap CPU!!
+    }
+    DCOCTL = 0;                               // Select lowest DCOx and MODx settings
+    c6d4:	c2 43 56 00 	mov.b	#0,	&0x0056	;r3 As==00
+
+0000c6d8 <.Loc.177.1>:
+    BCSCTL1 = CALBC1_16MHZ;                    // Set DCO
+    c6d8:	d2 42 f9 10 	mov.b	&0x10f9,&0x0057	;0x10f9
+    c6dc:	57 00 
+
+0000c6de <.Loc.178.1>:
+    DCOCTL = CALDCO_16MHZ;
+    c6de:	d2 42 f8 10 	mov.b	&0x10f8,&0x0056	;0x10f8
+    c6e2:	56 00 
+
+0000c6e4 <.Loc.179.1>:
+}
+    c6e4:	30 41       	ret			
+
+0000c6e6 <.L29>:
+        while(1);                               // do not load, trap CPU!!
+    c6e6:	ff 3f       	jmp	$+0      	;abs 0xc6e6
+
+0000c6e8 <InitSPI_GPIO>:
+  //LEDs
+//  P1OUT = 0x00;                             // P1 setup for LED & reset output
+//  P1DIR |= BIT0 | BIT5 | BIT6;
+
+  //SPI Pins
+  P1SEL |= BIT5 | BIT6 | BIT7;
+    c6e8:	f2 d0 e0 ff 	bis.b	#-32,	&0x0026	;#0xffe0
+    c6ec:	26 00 
+
+0000c6ee <.Loc.189.1>:
+  P1SEL2 |= BIT5 | BIT6 | BIT7;
+    c6ee:	f2 d0 e0 ff 	bis.b	#-32,	&0x0041	;#0xffe0
+    c6f2:	41 00 
+
+0000c6f4 <.Loc.191.1>:
+
+  P1DIR |= BIT5 | BIT7;
+    c6f4:	f2 d0 a0 ff 	bis.b	#-96,	&0x0022	;#0xffa0
+    c6f8:	22 00 
+
+0000c6fa <.Loc.194.1>:
+
+  //Button to initiate transfer
+  P1DIR &= ~(BIT3);
+    c6fa:	f2 c2 22 00 	bic.b	#8,	&0x0022	;r2 As==11
+
+0000c6fe <.Loc.195.1>:
+  P1OUT |= BIT3;                            // P1.3 pull up
+    c6fe:	f2 d2 21 00 	bis.b	#8,	&0x0021	;r2 As==11
+
+0000c702 <.Loc.196.1>:
+  P1REN |= BIT3;                            // P1.3 pull up/down resistor enable
+    c702:	f2 d2 27 00 	bis.b	#8,	&0x0027	;r2 As==11
+
+0000c706 <.Loc.197.1>:
+  P1IE  |= BIT3;                            // P1.3 interrupt enabled
+    c706:	f2 d2 25 00 	bis.b	#8,	&0x0025	;r2 As==11
+
+0000c70a <.Loc.198.1>:
+  P1IES |= BIT3;                            // P1.3 Hi/lo edge
+    c70a:	f2 d2 24 00 	bis.b	#8,	&0x0024	;r2 As==11
+
+0000c70e <.Loc.199.1>:
+  P1IFG &= ~BIT3;                           // P1.3 IFG cleared
+    c70e:	f2 c2 23 00 	bic.b	#8,	&0x0023	;r2 As==11
+
+0000c712 <.Loc.200.1>:
+}
+    c712:	30 41       	ret			
+
+0000c714 <InitSPI>:
+
+void InitSPI()
+{
+  //Clock Polarity: The inactive state is high
+  //MSB First, 8-bit, Master, 3-pin mode, Synchronous
+  UCB0CTL0 |= UCCKPL + UCMSB + UCMST + UCSYNC;
+    c714:	f2 d0 69 00 	bis.b	#105,	&0x0068	;#0x0069
+    c718:	68 00 
+
+0000c71a <.Loc.207.1>:
+  UCB0CTL1 |= UCSSEL_2;                     // SMCLK
+    c71a:	f2 d0 80 ff 	bis.b	#-128,	&0x0069	;#0xff80
+    c71e:	69 00 
+
+0000c720 <.Loc.208.1>:
+  UCB0BR0 |= 0x20;                          // /2
+    c720:	f2 d0 20 00 	bis.b	#32,	&0x006a	;#0x0020
+    c724:	6a 00 
+
+0000c726 <.Loc.209.1>:
+  UCB0BR1 = 0;                              //
+    c726:	c2 43 6b 00 	mov.b	#0,	&0x006b	;r3 As==00
+
+0000c72a <.Loc.210.1>:
+  UCA0MCTL = 0;                             // No modulation must be cleared for SPI
+    c72a:	c2 43 64 00 	mov.b	#0,	&0x0064	;r3 As==00
+
+0000c72e <.Loc.211.1>:
+  UCB0CTL1 &= ~UCSWRST;                     // **Initialize USCI state machine**
+    c72e:	d2 c3 69 00 	bic.b	#1,	&0x0069	;r3 As==01
+
+0000c732 <.Loc.212.1>:
+  IE2 |= UCB0RXIE;                          // Enable USCI0 RX interrupt
+    c732:	e2 d2 01 00 	bis.b	#4,	&0x0001	;r2 As==10
+
+0000c736 <.Loc.217.1>:
+
+//  SLAVE_CS_DIR |= SLAVE_CS_PIN;
+//  SLAVE_CS_OUT |= SLAVE_CS_PIN;
+
+}
+    c736:	30 41       	ret			
+
+0000c738 <USCIB0RX_ISR>:
+#elif defined(__GNUC__)
+void __attribute__ ((interrupt(USCIAB0RX_VECTOR))) USCIB0RX_ISR (void)
+#else
+#error Compiler not supported!
+#endif
+{
+    c738:	0f 12       	push	r15		;
+
+0000c73a <.LCFI3>:
+    c73a:	0e 12       	push	r14		;
+
+0000c73c <.LCFI4>:
+    c73c:	0d 12       	push	r13		;
+
+0000c73e <.LCFI5>:
+    c73e:	0c 12       	push	r12		;
+
+0000c740 <.LCFI6>:
+    if (IFG2 & UCB0RXIFG)
+    c740:	e2 b2 03 00 	bit.b	#4,	&0x0003	;r2 As==10
+    c744:	13 24       	jz	$+40     	;abs 0xc76c
+
+0000c746 <.LBB23>:
+    {
+        uint8_t ucb0_rx_val = UCB0RXBUF;
+    c746:	5d 42 6e 00 	mov.b	&0x006e,r13	;0x006e
+
+0000c74a <.LVL23>:
+        switch (MasterMode)
+    c74a:	1c 42 5a 02 	mov	&0x025a,r12	;0x025a
+    c74e:	3c 90 03 00 	cmp	#3,	r12	;
+    c752:	11 24       	jz	$+36     	;abs 0xc776
+    c754:	2c 92       	cmp	#4,	r12	;r2 As==10
+    c756:	25 24       	jz	$+76     	;abs 0xc7a2
+    c758:	1c 93       	cmp	#1,	r12	;r3 As==01
+    c75a:	42 24       	jz	$+134    	;abs 0xc7e0
+
+0000c75c <.Loc.326.1>:
+                    SendUCB0Data(DUMMY);
+                }
+                break;
+
+            default:
+                __no_operation();
+    c75c:	03 43       	nop			
+
+0000c75e <.L39>:
+                break;
+        }
+        __delay_cycles(50);
+    c75e:	0d 12       	push	r13		;
+    c760:	3d 40 0e 00 	mov	#14,	r13	;#0x000e
+
+0000c764 <.L1^B1>:
+    c764:	1d 83       	dec	r13		;
+    c766:	fe 23       	jnz	$-2      	;abs 0xc764
+    c768:	3d 41       	pop	r13		;
+    c76a:	03 43       	nop			
+
+0000c76c <.L32>:
+    }
+}
+    c76c:	3c 41       	pop	r12		;
+
+0000c76e <.LCFI7>:
+    c76e:	3d 41       	pop	r13		;
+
+0000c770 <.LCFI8>:
+    c770:	3e 41       	pop	r14		;
+
+0000c772 <.LCFI9>:
+    c772:	3f 41       	pop	r15		;
+
+0000c774 <.LCFI10>:
+    c774:	00 13       	reti			
+
+0000c776 <.L34>:
+                if (TXByteCtr)
+    c776:	5c 42 2d 02 	mov.b	&0x022d,r12	;0x022d
+
+0000c77a <.Loc.294.1>:
+    c77a:	c2 93 2d 02 	cmp.b	#0,	&0x022d	;r3 As==00
+    c77e:	23 24       	jz	$+72     	;abs 0xc7c6
+
+0000c780 <.Loc.296.1>:
+                  SendUCB0Data(TransmitBuffer[TransmitIndex++]);
+    c780:	5d 42 2c 02 	mov.b	&0x022c,r13	;0x022c
+
+0000c784 <.LVL26>:
+    c784:	4e 4d       	mov.b	r13,	r14	;
+    c786:	5e 53       	inc.b	r14		;
+    c788:	c2 4e 2c 02 	mov.b	r14,	&0x022c	;
+
+0000c78c <.Loc.296.1>:
+    c78c:	5d 4d 2e 02 	mov.b	558(r13),r13	;0x0022e
+
+0000c790 <.L42>:
+    while (!(IFG2 & UCB0TXIFG));              // USCI_A0 TX buffer ready?
+    c790:	f2 b2 03 00 	bit.b	#8,	&0x0003	;r2 As==11
+    c794:	fd 27       	jz	$-4      	;abs 0xc790
+
+0000c796 <.Loc.163.1>:
+    UCB0TXBUF = val;
+    c796:	c2 4d 6f 00 	mov.b	r13,	&0x006f	;
+
+0000c79a <.LBE24>:
+                  TXByteCtr--;
+    c79a:	7c 53       	add.b	#-1,	r12	;r3 As==11
+    c79c:	c2 4c 2d 02 	mov.b	r12,	&0x022d	;
+    c7a0:	de 3f       	jmp	$-66     	;abs 0xc75e
+
+0000c7a2 <.L35>:
+                if (RXByteCtr)
+    c7a2:	5c 42 43 02 	mov.b	&0x0243,r12	;0x0243
+
+0000c7a6 <.Loc.308.1>:
+    c7a6:	c2 93 43 02 	cmp.b	#0,	&0x0243	;r3 As==00
+    c7aa:	0d 24       	jz	$+28     	;abs 0xc7c6
+
+0000c7ac <.Loc.310.1>:
+                    ReceiveBuffer[ReceiveIndex++] = ucb0_rx_val;
+    c7ac:	5e 42 42 02 	mov.b	&0x0242,r14	;0x0242
+    c7b0:	4f 4e       	mov.b	r14,	r15	;
+    c7b2:	5f 53       	inc.b	r15		;
+    c7b4:	c2 4f 42 02 	mov.b	r15,	&0x0242	;
+
+0000c7b8 <.Loc.310.1>:
+    c7b8:	ce 4d 44 02 	mov.b	r13,	580(r14); 0x0244
+
+0000c7bc <.Loc.312.1>:
+                    RXByteCtr--;
+    c7bc:	7c 53       	add.b	#-1,	r12	;r3 As==11
+    c7be:	c2 4c 43 02 	mov.b	r12,	&0x0243	;
+
+0000c7c2 <.Loc.314.1>:
+                if (RXByteCtr == 0)
+    c7c2:	4c 93       	cmp.b	#0,	r12	;r3 As==00
+    c7c4:	26 20       	jnz	$+78     	;abs 0xc812
+
+0000c7c6 <.L41>:
+                  MasterMode = IDLE_MODE;
+    c7c6:	82 43 5a 02 	mov	#0,	&0x025a	;r3 As==00
+
+0000c7ca <.Loc.303.1>:
+                  __bic_SR_register_on_exit(CPUOFF);      // Exit LPM0
+    c7ca:	b1 c0 10 00 	bic	#16,	8(r1)	;#0x0010
+    c7ce:	08 00 
+
+0000c7d0 <.Loc.329.1>:
+        __delay_cycles(50);
+    c7d0:	0d 12       	push	r13		;
+    c7d2:	3d 40 0e 00 	mov	#14,	r13	;#0x000e
+
+0000c7d6 <.L1^B2>:
+    c7d6:	1d 83       	dec	r13		;
+    c7d8:	fe 23       	jnz	$-2      	;abs 0xc7d6
+    c7da:	3d 41       	pop	r13		;
+    c7dc:	03 43       	nop			
+    c7de:	c6 3f       	jmp	$-114    	;abs 0xc76c
+
+0000c7e0 <.L65>:
+                if (RXByteCtr)
+    c7e0:	c2 93 43 02 	cmp.b	#0,	&0x0243	;r3 As==00
+    c7e4:	1d 24       	jz	$+60     	;abs 0xc820
+
+0000c7e6 <.Loc.279.1>:
+                    MasterMode = RX_DATA_MODE;   // Need to start receiving now
+    c7e6:	a2 42 5a 02 	mov	#4,	&0x025a	;r2 As==10
+
+0000c7ea <.Loc.281.1>:
+                    __delay_cycles(2000);
+    c7ea:	0d 12       	push	r13		;
+    c7ec:	3d 40 98 02 	mov	#664,	r13	;#0x0298
+
+0000c7f0 <.L1^B3>:
+    c7f0:	1d 83       	dec	r13		;
+    c7f2:	fe 23       	jnz	$-2      	;abs 0xc7f0
+    c7f4:	3d 41       	pop	r13		;
+    c7f6:	03 43       	nop			
+
+0000c7f8 <.L38>:
+    while (!(IFG2 & UCB0TXIFG));              // USCI_A0 TX buffer ready?
+    c7f8:	f2 b2 03 00 	bit.b	#8,	&0x0003	;r2 As==11
+    c7fc:	fd 27       	jz	$-4      	;abs 0xc7f8
+
+0000c7fe <.L63>:
+    UCB0TXBUF = val;
+    c7fe:	f2 43 6f 00 	mov.b	#-1,	&0x006f	;r3 As==11
+
+0000c802 <.LBE28>:
+        __delay_cycles(50);
+    c802:	0d 12       	push	r13		;
+    c804:	3d 40 0e 00 	mov	#14,	r13	;#0x000e
+
+0000c808 <.L1^B4>:
+    c808:	1d 83       	dec	r13		;
+    c80a:	fe 23       	jnz	$-2      	;abs 0xc808
+    c80c:	3d 41       	pop	r13		;
+    c80e:	03 43       	nop			
+    c810:	ad 3f       	jmp	$-164    	;abs 0xc76c
+
+0000c812 <.L45>:
+    while (!(IFG2 & UCB0TXIFG));              // USCI_A0 TX buffer ready?
+    c812:	f2 b2 03 00 	bit.b	#8,	&0x0003	;r2 As==11
+    c816:	f3 23       	jnz	$-24     	;abs 0xc7fe
+
+0000c818 <.Loc.162.1>:
+    c818:	f2 b2 03 00 	bit.b	#8,	&0x0003	;r2 As==11
+    c81c:	fa 27       	jz	$-10     	;abs 0xc812
+    c81e:	ef 3f       	jmp	$-32     	;abs 0xc7fe
+
+0000c820 <.L37>:
+                    MasterMode = TX_DATA_MODE;        // Continue to transmision with the data in Transmit Buffer
+    c820:	b2 40 03 00 	mov	#3,	&0x025a	;
+    c824:	5a 02 
+
+0000c826 <.Loc.288.1>:
+                    SendUCB0Data(TransmitBuffer[TransmitIndex++]);
+    c826:	5c 42 2c 02 	mov.b	&0x022c,r12	;0x022c
+    c82a:	4d 4c       	mov.b	r12,	r13	;
+
+0000c82c <.LVL32>:
+    c82c:	5d 53       	inc.b	r13		;
+    c82e:	c2 4d 2c 02 	mov.b	r13,	&0x022c	;
+
+0000c832 <.Loc.288.1>:
+    c832:	5c 4c 2e 02 	mov.b	558(r12),r12	;0x0022e
+
+0000c836 <.L40>:
+    while (!(IFG2 & UCB0TXIFG));              // USCI_A0 TX buffer ready?
+    c836:	f2 b2 03 00 	bit.b	#8,	&0x0003	;r2 As==11
+    c83a:	fd 27       	jz	$-4      	;abs 0xc836
+
+0000c83c <.Loc.163.1>:
+    UCB0TXBUF = val;
+    c83c:	c2 4c 6f 00 	mov.b	r12,	&0x006f	;
+
+0000c840 <.LBE32>:
+                    TXByteCtr--;
+    c840:	f2 53 2d 02 	add.b	#-1,	&0x022d	;r3 As==11
+    c844:	8c 3f       	jmp	$-230    	;abs 0xc75e
+
+0000c846 <Port_1>:
+#else
+#error Compiler not supported!
+#endif
+{
+//    P1OUT |= BIT6;
+    P1IFG &= ~BIT3;                           // P1.3 IFG cleared
+    c846:	f2 c2 23 00 	bic.b	#8,	&0x0023	;r2 As==11
+
+0000c84a <.Loc.350.1>:
+    P1IE &= ~BIT3;
+    c84a:	f2 c2 25 00 	bic.b	#8,	&0x0025	;r2 As==11
+
+0000c84e <.Loc.352.1>:
+    //Initiate
+    __bic_SR_register_on_exit(LPM0_bits);      // Exit LPM0
+    c84e:	b1 c0 10 00 	bic	#16,	0(r1)	;#0x0010
+    c852:	00 00 
+
+0000c854 <.Loc.353.1>:
+}
+    c854:	00 13       	reti			
+
+0000c856 <SPI_WriteReg>:
+uint8_t MCP23S17_Init3[ INIT3_LEN ] = { 0x12, 0x08, 0x80 };
+// GPIOA |     0|     0|     0|     0|     0|     0|     0|     0
+// GPIOB |     0|     0|     0|     0|     0|     0|     0|     0
+
+SPI_Mode SPI_WriteReg( uint8_t chip_addr, uint8_t reg_addr, uint8_t *reg_data, uint8_t count )
+{
+    c856:	4b 4d       	mov.b	r13,	r11	;
+    c858:	0d 4e       	mov	r14,	r13	;
+
+0000c85a <.LVL1>:
+  P2OUT |= chip_addr & 0x07;
+    c85a:	7c f0 07 00 	and.b	#7,	r12	;
+
+0000c85e <.LVL2>:
+    c85e:	c2 dc 29 00 	bis.b	r12,	&0x0029	;
+
+0000c862 <.Loc.26.1>:
+  SPI_Master_WriteReg( reg_addr, reg_data, count );
+    c862:	4e 4f       	mov.b	r15,	r14	;
+
+0000c864 <L0^A>:
+    c864:	4c 4b       	mov.b	r11,	r12	;
+    c866:	b0 12 38 c6 	call	#-14792	;#0xc638
+
+0000c86a <.LVL4>:
+  P2OUT &= 0x0F8;
+    c86a:	f2 f0 f8 ff 	and.b	#-8,	&0x0029	;#0xfff8
+    c86e:	29 00 
+
+0000c870 <.Loc.28.1>:
+  return MasterMode;
+}
+    c870:	1c 42 5a 02 	mov	&0x025a,r12	;0x025a
+    c874:	30 41       	ret			
+
+0000c876 <SPI_ReadReg>:
+
+SPI_Mode SPI_ReadReg( uint8_t chip_addr, uint8_t reg_addr, uint8_t count )
+{
+    c876:	4f 4d       	mov.b	r13,	r15	;
+
+0000c878 <.Loc.33.1>:
+  P2OUT |= chip_addr & 0x07;
+    c878:	7c f0 07 00 	and.b	#7,	r12	;
+
+0000c87c <.LVL6>:
+    c87c:	c2 dc 29 00 	bis.b	r12,	&0x0029	;
+
+0000c880 <.Loc.34.1>:
+  SPI_Master_ReadReg( reg_addr, count );
+    c880:	4d 4e       	mov.b	r14,	r13	;
+
+0000c882 <.LVL7>:
+    c882:	4c 4f       	mov.b	r15,	r12	;
+    c884:	b0 12 8e c6 	call	#-14706	;#0xc68e
+
+0000c888 <.LVL8>:
+  P2OUT &= 0x0F8;
+    c888:	f2 f0 f8 ff 	and.b	#-8,	&0x0029	;#0xfff8
+    c88c:	29 00 
+
+0000c88e <.Loc.36.1>:
+  return MasterMode;
+}
+    c88e:	1c 42 5a 02 	mov	&0x025a,r12	;0x025a
+    c892:	30 41       	ret			
+
+0000c894 <InitSPI_FrontEnd_GPIO>:
+
+void InitSPI_FrontEnd_GPIO( void )
+{
+  P2DIR |= BIT0 | BIT1 | BIT2;
+    c894:	f2 d0 07 00 	bis.b	#7,	&0x002a	;
+    c898:	2a 00 
+
+0000c89a <.Loc.42.1>:
+  P2OUT &= 0x0F8;
+    c89a:	f2 f0 f8 ff 	and.b	#-8,	&0x0029	;#0xfff8
+    c89e:	29 00 
+
+0000c8a0 <.Loc.43.1>:
+}
+    c8a0:	30 41       	ret			
+
+0000c8a2 <InitUart>:
+#include "uart_115k.h"
+
+// int main(void)
+void InitUart( void )
+{
+  WDTCTL = WDTPW + WDTHOLD;                 // Stop WDT
+    c8a2:	b2 40 80 5a 	mov	#23168,	&0x0120	;#0x5a80
+    c8a6:	20 01 
+
+0000c8a8 <.Loc.77.1>:
+  if (CALBC1_1MHZ==0xFF)					// If calibration constant erased
+    c8a8:	5c 42 ff 10 	mov.b	&0x10ff,r12	;0x10ff
+    c8ac:	7c 93       	cmp.b	#-1,	r12	;r3 As==11
+    c8ae:	16 24       	jz	$+46     	;abs 0xc8dc
+
+0000c8b0 <.Loc.84.1>:
+    while(1);                               // do not load, trap CPU!!
+  }
+//  DCOCTL = 0;                               // Select lowest DCOx and MODx settings
+//  BCSCTL1 = CALBC1_1MHZ;                    // Set DCO
+//  DCOCTL = CALDCO_1MHZ;
+  P1SEL = BIT1 + BIT2 ;                     // P1.1 = RXD, P1.2=TXD
+    c8b0:	f2 40 06 00 	mov.b	#6,	&0x0026	;
+    c8b4:	26 00 
+
+0000c8b6 <.Loc.85.1>:
+  P1SEL2 = BIT1 + BIT2;
+    c8b6:	f2 40 06 00 	mov.b	#6,	&0x0041	;
+    c8ba:	41 00 
+
+0000c8bc <.Loc.86.1>:
+  UCA0CTL1 |= UCSSEL_2;                     // SMCLK
+    c8bc:	f2 d0 80 ff 	bis.b	#-128,	&0x0061	;#0xff80
+    c8c0:	61 00 
+
+0000c8c2 <.Loc.89.1>:
+//  UCA0BR0 = 8;                              // 1MHz 115200
+//  UCA0BR1 = 0;                              // 1MHz 115200
+  UCA0BR0 = 138;                            // 16MHz 115200
+    c8c2:	f2 40 8a ff 	mov.b	#-118,	&0x0062	;#0xff8a
+    c8c6:	62 00 
+
+0000c8c8 <.Loc.90.1>:
+  UCA0BR1 = 0;                              // 16MHz 115200
+    c8c8:	c2 43 63 00 	mov.b	#0,	&0x0063	;r3 As==00
+
+0000c8cc <.Loc.92.1>:
+//  UCA0MCTL = UCBRS2 + UCBRS0;               // Modulation UCBRSx = 5
+  UCA0MCTL = UCBRS2 + UCBRS1 + UCBRS0;      // Modulation UCBRSx = 7
+    c8cc:	f2 40 0e 00 	mov.b	#14,	&0x0064	;#0x000e
+    c8d0:	64 00 
+
+0000c8d2 <.Loc.93.1>:
+  UCA0CTL1 &= ~UCSWRST;                     // **Initialize USCI state machine**
+    c8d2:	d2 c3 61 00 	bic.b	#1,	&0x0061	;r3 As==01
+
+0000c8d6 <.Loc.94.1>:
+  IE2 |= UCA0RXIE;                          // Enable USCI_A0 RX interrupt
+    c8d6:	d2 d3 01 00 	bis.b	#1,	&0x0001	;r3 As==01
+
+0000c8da <.Loc.97.1>:
+
+//  __bis_SR_register(LPM0_bits + GIE);       // Enter LPM0, interrupts enabled
+}
+    c8da:	30 41       	ret			
+
+0000c8dc <.L3>:
+    while(1);                               // do not load, trap CPU!!
+    c8dc:	ff 3f       	jmp	$+0      	;abs 0xc8dc
+
+0000c8de <__mspabi_func_epilog_7>:
+    c8de:	34 41       	pop	r4		;
+
+0000c8e0 <__mspabi_func_epilog_6>:
+    c8e0:	35 41       	pop	r5		;
+
+0000c8e2 <__mspabi_func_epilog_5>:
+    c8e2:	36 41       	pop	r6		;
+
+0000c8e4 <__mspabi_func_epilog_4>:
+    c8e4:	37 41       	pop	r7		;
+
+0000c8e6 <__mspabi_func_epilog_3>:
+    c8e6:	38 41       	pop	r8		;
+
+0000c8e8 <__mspabi_func_epilog_2>:
+    c8e8:	39 41       	pop	r9		;
+
+0000c8ea <__mspabi_func_epilog_1>:
+    c8ea:	3a 41       	pop	r10		;
+    c8ec:	30 41       	ret			
+
+0000c8ee <memcpy>:
+    c8ee:	0a 12       	push	r10		;
+
+0000c8f0 <.LCFI0>:
+    c8f0:	4f 43       	clr.b	r15		;
+
+0000c8f2 <.L2>:
+    c8f2:	0e 9f       	cmp	r15,	r14	;
+    c8f4:	02 20       	jnz	$+6      	;abs 0xc8fa
+
+0000c8f6 <.Loc.111.1>:
+    c8f6:	3a 41       	pop	r10		;
+
+0000c8f8 <.LCFI1>:
+    c8f8:	30 41       	ret			
+
+0000c8fa <.L3>:
+    c8fa:	0b 4c       	mov	r12,	r11	;
+    c8fc:	0b 5f       	add	r15,	r11	;
+
+0000c8fe <.Loc.67.1>:
+    c8fe:	0a 4d       	mov	r13,	r10	;
+    c900:	0a 5f       	add	r15,	r10	;
+
+0000c902 <.Loc.67.1>:
+    c902:	eb 4a 00 00 	mov.b	@r10,	0(r11)	;
+    c906:	1f 53       	inc	r15		;
+
+0000c908 <.LVL4>:
+    c908:	f4 3f       	jmp	$-22     	;abs 0xc8f2
+
+0000c90a <memmove>:
+    c90a:	0a 12       	push	r10		;
+
+0000c90c <L0^A>:
+    c90c:	09 12       	push	r9		;
+
+0000c90e <.LCFI1>:
+    c90e:	0d 9c       	cmp	r12,	r13	;
+    c910:	1d 2c       	jc	$+60     	;abs 0xc94c
+
+0000c912 <.Loc.69.1>:
+    c912:	0a 4d       	mov	r13,	r10	;
+    c914:	0a 5e       	add	r14,	r10	;
+
+0000c916 <.Loc.69.1>:
+    c916:	0c 9a       	cmp	r10,	r12	;
+    c918:	19 2c       	jc	$+52     	;abs 0xc94c
+
+0000c91a <.LVL2>:
+    c91a:	09 4e       	mov	r14,	r9	;
+    c91c:	39 e3       	inv	r9		;
+
+0000c91e <.Loc.74.1>:
+    c91e:	4d 43       	clr.b	r13		;
+
+0000c920 <.L3>:
+    c920:	3d 53       	add	#-1,	r13	;r3 As==11
+
+0000c922 <.LVL4>:
+    c922:	09 9d       	cmp	r13,	r9	;
+    c924:	01 20       	jnz	$+4      	;abs 0xc928
+
+0000c926 <.L10>:
+    c926:	e0 3f       	jmp	$-62     	;abs 0xc8e8
+
+0000c928 <.L4>:
+    c928:	0f 4e       	mov	r14,	r15	;
+    c92a:	0f 5d       	add	r13,	r15	;
+    c92c:	0f 5c       	add	r12,	r15	;
+    c92e:	0b 4a       	mov	r10,	r11	;
+    c930:	0b 5d       	add	r13,	r11	;
+
+0000c932 <.LVL7>:
+    c932:	ef 4b 00 00 	mov.b	@r11,	0(r15)	;
+    c936:	f4 3f       	jmp	$-22     	;abs 0xc920
+
+0000c938 <.L6>:
+    c938:	0b 4d       	mov	r13,	r11	;
+    c93a:	0b 5f       	add	r15,	r11	;
+
+0000c93c <.Loc.83.1>:
+    c93c:	0a 4c       	mov	r12,	r10	;
+    c93e:	0a 5f       	add	r15,	r10	;
+    c940:	ea 4b 00 00 	mov.b	@r11,	0(r10)	;
+    c944:	1f 53       	inc	r15		;
+
+0000c946 <.L5>:
+    c946:	0e 9f       	cmp	r15,	r14	;
+    c948:	f7 23       	jnz	$-16     	;abs 0xc938
+    c94a:	ed 3f       	jmp	$-36     	;abs 0xc926
+
+0000c94c <.L9>:
+    c94c:	4f 43       	clr.b	r15		;
+    c94e:	fb 3f       	jmp	$-8      	;abs 0xc946
+
+0000c950 <memset>:
+    c950:	0e 5c       	add	r12,	r14	;
+
+0000c952 <.LVL2>:
+    c952:	0f 4c       	mov	r12,	r15	;
+
+0000c954 <.L2>:
+    c954:	0f 9e       	cmp	r14,	r15	;
+    c956:	01 20       	jnz	$+4      	;abs 0xc95a
+
+0000c958 <L0^A>:
+    c958:	30 41       	ret			
+
+0000c95a <.L3>:
+    c95a:	1f 53       	inc	r15		;
+
+0000c95c <.LVL4>:
+    c95c:	cf 4d ff ff 	mov.b	r13,	-1(r15)	; 0xffff
+    c960:	f9 3f       	jmp	$-12     	;abs 0xc954
