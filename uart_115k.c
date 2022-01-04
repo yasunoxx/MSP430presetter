@@ -81,8 +81,10 @@ void InitUart( void )
 //  DCOCTL = 0;                               // Select lowest DCOx and MODx settings
 //  BCSCTL1 = CALBC1_1MHZ;                    // Set DCO
 //  DCOCTL = CALDCO_1MHZ;
-  P1SEL = BIT1 + BIT2 ;                     // P1.1 = RXD, P1.2=TXD
-  P1SEL2 = BIT1 + BIT2;
+//  P1SEL = BIT1 + BIT2 ;                     // P1.1 = RXD, P1.2=TXD
+//  P1SEL2 = BIT1 + BIT2;
+  P1SEL |= BIT1 | BIT2 ;                     // P1.1 = RXD, P1.2=TXD
+  P1SEL2 |= BIT1 | BIT2;
   UCA0CTL1 |= UCSSEL_2;                     // SMCLK
 //  UCA0BR0 = 8;                              // 1MHz 115200
 //  UCA0BR1 = 0;                              // 1MHz 115200
