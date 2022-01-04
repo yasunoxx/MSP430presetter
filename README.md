@@ -1,4 +1,4 @@
-MSP430PseudoRNG
+MSP430presetter
 ===============
 
 TI MSP430 PSG/OPLL Register Presetter for MSP430-LaunchPad, or MSP430G2553.
