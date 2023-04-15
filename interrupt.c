@@ -1,10 +1,8 @@
 // interrupt.c -- Interrupt Service Routuies
 // (C)2022 yasunoxx
-#ifdef GCC_VERSION_463
-#include <legacymsp430.h>
-#else
+// ### Use TI-MSPGCC6.1.1.0 or above version ###
+
 #include <msp430g2553.h>
-#endif
 #include <stdint.h>
 #include "io.h"
 

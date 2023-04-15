@@ -1,7 +1,7 @@
 /*
  * io.c -- MSP430 Pseudorandom Number Generator
  * by yasunoxx
- * ### Use mspgcc(4.6.3 or later) only !!! ###
+ * ### Use TI-MSPGCC6.1.1.0 or above version ###
  */
 
 // Original Copyright:
@@ -43,11 +43,7 @@
  *
 */
 
-#ifdef GCC_VERSION_463
-#include <legacymsp430.h>
-#else
 #include <msp430g2553.h>
-#endif
 #include "io.h"
 
 volatile unsigned short TempReg;
@@ -56,7 +52,7 @@ void ConfigureAdcTempSensor( void )
 {
   /* Configure ADC Temp Sensor Channel */
   ADC10CTL1 = INCH_10 + ADC10DIV_3 + SHS_1;
-                        // Temp Sensor ADC10CLK/4, Timer_A.OUT1 Trigger
+  // Temp Sensor ADC10CLK/4, Timer_A.OUT1 Trigger
   ADC10CTL0 = SREF_1 + ADC10SHT_3 + REFON + REF2_5V + ADC10ON;  // + ADC10IE;
   ADC10CTL0 &= ~ADC10IFG;
   ADC10CTL0 |= ENC + ADC10SC;  // Sampling and conversion start
