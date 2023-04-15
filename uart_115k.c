@@ -65,7 +65,7 @@
 //   February 2011
 //   Built with CCS Version 4.2.0 and IAR Embedded Workbench Version: 5.10
 //******************************************************************************
-//#include <msp430.h>
+
 #include <msp430g2553.h>
 #include <stdint.h>
 #include "uart_115k.h"

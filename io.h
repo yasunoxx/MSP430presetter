@@ -1,7 +1,7 @@
 /*
  * io.h -- MSP430 Pseudorandom Number Generator
  * by yasunoxx
- * ### Use mspgcc(4.6.3 or later) only !!! ###
+ * ### Use TI-MSPGCC6.1.1.0 or above version ###
  */
 
 #define	LED1		BIT0

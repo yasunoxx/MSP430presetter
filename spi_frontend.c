@@ -1,7 +1,7 @@
 /*
  * spi_frontend.c -- MSP430, and MCP23S17 SPI frontend
  * by yasunoxx
- * ### Use mspgcc(4.6.3 or later) only !!! ###
+ * ### Use TI-MSPGCC6.1.1.0 or above version ###
  */
 
 #include <msp430g2553.h>

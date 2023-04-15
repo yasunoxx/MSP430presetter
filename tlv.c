@@ -1,18 +1,14 @@
 /*
  * tlv.c -- MSP430Framework for LaunchPad
  * by yasunoxx
- * ### Use mspgcc(4.6.3 or later) only !!! ###
- */
+ * ### Use TI-MSPGCC6.1.1.0 or above version ###
+*/
 
 /* original source by Paul Haddad
    http://e2e.ti.com/support/microcontrollers/msp430/f/166/t/89118.aspx?pi24337=1
 */
 
-#ifdef GCC_VERSION_463
-#include <legacymsp430.h>
-#else
 #include <msp430g2553.h>
-#endif
 #include <string.h>
 #include "tlv.h"
 

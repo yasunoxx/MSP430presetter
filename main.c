@@ -1,7 +1,7 @@
 /*
  * main.c -- MSP430 PSG/OPLL Register Presetter
  * by yasunoxx
- * ### Use mspgcc(4.6.3 or later) only !!! ###
+ * ### Use TI-MSPGCC6.1.1.0 or above version ###
  */
 
 /* target type are define in Makefile */
@@ -52,11 +52,7 @@
  *   4. signal handling
  */
 
-#ifdef GCC_VERSION_463
-#include <legacymsp430.h>
-#else
 #include <msp430g2553.h>
-#endif
 #include <stdint.h>
 #include "io.h"
 #include "tlv.h"

@@ -1,7 +1,7 @@
 /*
  * spi_frontend.h -- MSP430, and MCP23S17 SPI frontend
  * by yasunoxx
- * ### Use mspgcc(4.6.3 or later) only !!! ###
+ * ### Use TI-MSPGCC6.1.1.0 or above version ###
  */
 
 extern SPI_Mode SPI_WriteReg( uint8_t chip_addr, uint8_t reg_addr, uint8_t *reg_data, uint8_t count );
