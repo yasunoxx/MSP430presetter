@@ -84,16 +84,19 @@ void InitializeLeds( void );
 
 #define SYSTIMER_COUNTUP	100
 volatile unsigned int SysTimer_Counter;
-volatile unsigned short LcdWait;
+#define SYSTIMER2_COUNTUP	10
+volatile unsigned int SysTimer2_Counter;
 #define Low 0
 #define High 1
 volatile unsigned char ClockMode;
 
 #define	SYSTIMER_FLIP_OFF	0
 #define	SYSTIMER_FLIP_ON	1
-unsigned char F_SysTimer_Flipper;
-unsigned short ScreenWait;
-unsigned char ScreenScenario;
+volatile unsigned char F_SysTimer_Flipper;
+#define	SYSTIMER2_FLIP_OFF	0
+#define	SYSTIMER2_FLIP_ON	1
+volatile unsigned char F_SysTimer2_Flipper;
+volatile unsigned short London;
 
 int main( void )
 {
@@ -122,6 +125,7 @@ int main( void )
 
 	LED_OUT |= LED1;  // Runup
 
+	SPI_WriteReg( 3, DEVADDR_TARGET1_WRITE, MCP23S17_Init1, INIT1_LEN );
 	SPI_WriteReg( 1, DEVADDR_TARGET1_WRITE, MCP23S17_Init1, INIT1_LEN );
 	SPI_WriteReg( 1, DEVADDR_TARGET1_WRITE, MCP23S17_Init2, INIT2_LEN );
 	SPI_WriteReg( 1, DEVADDR_TARGET1_WRITE, MCP23S17_Init3, INIT3_LEN );
@@ -131,18 +135,41 @@ int main( void )
 	/* Main Application Loop */
 	while( 1 )
 	{
+		// demonstraation: London
+		if( F_SysTimer2_Flipper == SYSTIMER2_FLIP_ON )
+	  {
+	    F_SysTimer2_Flipper = SYSTIMER2_FLIP_OFF;
+			{
+				unsigned char f_carry = Low;
+				unsigned char london_data[ 2 ];
+
+				if( ( London & 0x8000 ) != 0 )
+				{
+					f_carry = High;
+				}
+				London <<= 1;
+				if( f_carry == High )
+				{
+					London |= 0x0001;
+				}
+				london_data[ 0 ] = ( ( London & 0x0FF00 ) >> 8 );
+				london_data[ 1 ] = ( London & 0x00FF );
+				SPI_WriteReg( 3, 0x00, london_data, 2 );
+			}
+	  }
 	}
 }
 
 
 void PreApplicationMode( void )
 {
-  SysTimer_Counter = 0;
+	SysTimer_Counter = 0;
   F_SysTimer_Flipper = SYSTIMER_FLIP_OFF;
+	SysTimer2_Counter = 0;
+	F_SysTimer2_Flipper = SYSTIMER2_FLIP_OFF;
   ClockMode = Low;
 
-  ScreenWait = 0;
-  ScreenScenario = 0;
+	London = 0x8888;
 //  __bis_SR_register( LPM3_bits + GIE );  // LPM0 with
 //  __bis_SR_register( LPM3_bits );
 }
@@ -222,55 +249,4 @@ void initializeDCO( void )
   BCSCTL1 |= XT2OFF; // XT2 off, and Set ACLK to /1 divider
 
   ClockMode = High;
-}
-
-
-
-#if __MSP430_HEADER_VERSION__ == 1210
-void __attribute__ (( interrupt TIMER0_A0_VECTOR )) TimerA0_ISR( void )
-#else
-interrupt ( TIMER0_A0_VECTOR ) TimerA0_ISR( void )
-#endif
-{
-  TACCTL0 &= ~CCIFG;
-}
-
-#if __MSP430_HEADER_VERSION__ == 1210
-void __attribute__ (( interrupt TIMER0_A1_VECTOR )) TimerA1_ISR( void )
-#else
-interrupt ( TIMER0_A1_VECTOR ) TimerA1_ISR( void )
-#endif
-{
-  SysTimer_Counter++;
-  if( SysTimer_Counter >= SYSTIMER_COUNTUP )
-  {
-    if( F_SysTimer_Flipper == SYSTIMER_FLIP_OFF )
-    {
-      F_SysTimer_Flipper = SYSTIMER_FLIP_ON;
-      LED_OUT |= LED1;
-    }
-    else
-    {
-      F_SysTimer_Flipper = SYSTIMER_FLIP_OFF;
-      LED_OUT &= ~LED1;
-    }
-    SysTimer_Counter = 0;
-  }
-
-  LcdWait++;
-  ScreenWait++;
-
-  TACCTL1 &= ~CCIFG;
-}
-
-// ADC10 interrupt service routine
-#if __MSP430_HEADER_VERSION__ == 1210
-void __attribute__ (( interrupt WDT_VECTOR )) WDT_ISR( void )
-#else
-interrupt ( WDT_VECTOR ) WDT_ISR( void )
-#endif
-{
-  IE1 &= ~WDTIE;  /* disable interrupt */
-  IFG1 &= ~WDTIFG;  /* clear interrupt flag */
-  WDTCTL = WDTPW + WDTHOLD;  /* put WDT back in hold state */
 }

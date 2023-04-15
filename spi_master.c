@@ -190,6 +190,7 @@ void InitSPI_GPIO()
 
   P1DIR |= BIT5 | BIT7;
 
+#ifdef IGNOREIT
   //Button to initiate transfer
   P1DIR &= ~(BIT3);
   P1OUT |= BIT3;                            // P1.3 pull up
@@ -197,6 +198,7 @@ void InitSPI_GPIO()
   P1IE  |= BIT3;                            // P1.3 interrupt enabled
   P1IES |= BIT3;                            // P1.3 Hi/lo edge
   P1IFG &= ~BIT3;                           // P1.3 IFG cleared
+#endif // IGNOREIT
 }
 
 void InitSPI()
@@ -330,7 +332,7 @@ void __attribute__ ((interrupt(USCIAB0RX_VECTOR))) USCIB0RX_ISR (void)
     }
 }
 
-
+#ifdef IGNOREIT
 //******************************************************************************
 // PORT1 Interrupt *************************************************************
 // Interrupt occurs on button press and initiates the SPI data transfer ********
@@ -351,3 +353,4 @@ void __attribute__ ((interrupt(PORT1_VECTOR))) Port_1 (void)
     //Initiate
     __bic_SR_register_on_exit(LPM0_bits);      // Exit LPM0
 }
+#endif // IGNORET

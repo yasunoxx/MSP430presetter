@@ -89,11 +89,7 @@ void InitializeButton( void )   // Configure Push Button
 
 
 // ADC10 interrupt service routine
-#if __MSP430_HEADER_VERSION__ == 1210
 void __attribute__ (( interrupt ADC10_VECTOR )) ADC10_ISR( void )
-#else
-interrupt ( ADC10_VECTOR ) ADC10_ISR( void )
-#endif
 {
   TempReg = ADC10MEM;
   ADC10CTL0 &= ~ADC10IFG;

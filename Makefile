@@ -1,7 +1,7 @@
 # makefile configuration
 # MAJORITY_DECISION = yes
 NAME = main
-OBJS = main.o io.o tlv.o spi_master.o spi_frontend.o uart_115k.o
+OBJS = main.o io.o tlv.o spi_master.o spi_frontend.o uart_115k.o interrupt.o
 ARCH  = msp430-elf
 CPU = msp430g2553
 
